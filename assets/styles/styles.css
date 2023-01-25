@@ -2,20 +2,6 @@
     --nav-bar__height: 120px;    
 }
 
-html {
-    overflow: hidden;
-    height: 100%;
-}
-
-body {
-    background-color: #fff;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-    overflow: auto;
-    overflow-x: hidden;
-}
-
 /* Buttons */
 .button__default,
 .button__white,
@@ -34,28 +20,45 @@ body {
     color: #000;
 }
 .button__default:hover {
-    background-color: #000;
     color: #fff;
+    background-color: #000;
 }
 .button__white {
-    background-color: transparent;
-    border: 2px solid #fff;
     color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
 }
 .button__white:hover {
-    background-color: #fff;
     color: #000;
+    background-color: #fff;
 }
 .button__red {
-    border: 2px solid #B13A00;
     color: #fff;
+    border: 2px solid #B13A00;
     background-color: #B13A00;
 }
 .button__red:hover {
-
+    color: #B13A00;
+    border: 2px solid #B13A00;
+    background-color: #fff;
 }
 
 /* Nav */
+/* Nav <nav>
+nav-link
+
+Proxima Nova, Medium - 14px
+Font Family: Proxima Nova
+Font Weight: Medium
+Font Size: 14px
+Color: #000000
+Character Spacing: 100
+Line Spacing: 17  */
+nav {
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 1.4px;    
+}
 .nav-bar__wrapper {
     position: absolute;
     top: 0px;
@@ -84,43 +87,39 @@ body {
     cursor: pointer;
 }
 .nav-bar__links__container {
+	position: relative;
     display: flex;
     align-items: center;
     column-gap: 40px;
 }
 .nav-bar__link {
+	display: flex;
+	justify-content: center;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.nav-bar__link:hover {
-    opacity: 0.8;
-}
-.nav-bar__link.selected::after {
-    content: "";
-    /* top: -15px; */
+.nav-bar__link::after {
+	position: absolute;
+	content: "";
+	bottom: 0px;
     background: #fff;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+.nav-bar__link:hover::after,
+.nav-bar__link.selected::after {
+    opacity: 1;
 }
 .nav-bar__button {
-    height: 40px;
-    max-height: 40px;
-    padding: 10px 30px 10px 30px;
-    background-color: white;
-    border: 2px solid #000;
-    border-radius: 22px;
-    opacity: 1;
-    transition: background-color ease 0.3s;
-    cursor: pointer;
+    margin: 0px !important;
 }
-.nav-bar__button:hover {
-    background-color: #000;
-    color: #fff;
-}
+
 
 /* Hero section */
 .hero__wrapper {
@@ -218,6 +217,7 @@ body {
 .grid__item__container {
     display: flex;
     flex-direction: column;
+	max-width: 480px;
     padding: 0px 120px;
 }
 .grid__item__end {

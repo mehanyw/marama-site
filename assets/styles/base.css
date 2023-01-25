@@ -1,0 +1,113 @@
+/* Fonts */
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../fonts/proximanova-medium-webfont.woff) format(woff), 
+         url(../fonts/proximanova-medium-webfont.woff2) format(woff2);
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../fonts/proximanova-mediumit-webfont.woff) format(woff), 
+         url(../fonts/proximanova-mediumit-webfont.woff2) format(woff2);
+    font-weight: medium;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../fonts/proximanova-regular-webfont.woff) format(woff), 
+         url(../fonts/proximanova-regular-webfont.woff2) format(woff2);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../fonts/proximanova-regularit-webfont.woff) format(woff), 
+         url(../fonts/proximanova-regularit-webfont.woff2) format(woff2);
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* HTML basics */
+html {
+    overflow: hidden;
+    height: 100%;
+}
+body {
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/* Text basics */
+h1, h2, h3, h4, h5, h6, p, a, li, button {
+	font-family: 'ProximaNova';
+}
+h1 {
+	font-size: 36px;
+	font-weight: medium;
+	color: #000;
+	letter-spacing: 1.8px;
+	line-height: 44px;
+	margin: 10px 0px;
+}
+h2 {
+	font-size: 26px;
+	font-weight: medium;
+	color: #000;
+	letter-spacing: 1.3px;
+	line-height: 35px;
+	margin: 10px 0px;
+}
+.header__wide {
+	letter-spacing: 100px;
+}
+h3 {
+	font-size: 16px;
+	font-weight: medium;
+	color: #000;
+	letter-spacing: 1.6px;
+	line-height: 26px;
+}
+.header__tight {
+	line-height: 20px;
+}
+p {
+	font-size: 16px;
+	font-weight: normal;
+	color: #000;
+	letter-spacing: 0.8px;
+	line-height: 26px;
+	margin: 10px 0px;
+}
+button {
+	font-size: 16px;
+	letter-spacing: 1.6px;
+    line-height: 18px;
+	margin: 20px 0px
+}
+
+/* Text modifiers */
+.text__white {
+	color: #fff;
+}
+.text__black {
+	color: #000;
+}
+
+/* Stats <p class=”stats”>
+Proxima Nova, Regular - 60px
+Font Family: Proxima Nova
+Font Weight: Regular
+Font Size: 60px
+Color: #000000
+Character Spacing: 50
+Line Spacing: 73
+
+Paragraph <p>
+
+
+
+
+
