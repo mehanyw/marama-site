@@ -3,32 +3,33 @@
     font-family: 'ProximaNova';
     src: url(../fonts/proximanova-medium-webfont.woff) format(woff), 
          url(../fonts/proximanova-medium-webfont.woff2) format(woff2);
-    font-weight: medium;
+    font-weight: 500;
+	font-style: normal;
 }
 @font-face {
     font-family: 'ProximaNova';
     src: url(../fonts/proximanova-mediumit-webfont.woff) format(woff), 
          url(../fonts/proximanova-mediumit-webfont.woff2) format(woff2);
-    font-weight: medium;
+    font-weight: 500;
     font-style: italic;
 }
 @font-face {
     font-family: 'ProximaNova';
     src: url(../fonts/proximanova-regular-webfont.woff) format(woff), 
          url(../fonts/proximanova-regular-webfont.woff2) format(woff2);
-    font-weight: normal;
+    font-weight: 400;
+	font-style: normal;
 }
 @font-face {
     font-family: 'ProximaNova';
     src: url(../fonts/proximanova-regularit-webfont.woff) format(woff), 
          url(../fonts/proximanova-regularit-webfont.woff2) format(woff2);
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
 }
 
 /* HTML basics */
 html {
-    overflow: hidden;
     height: 100%;
 }
 body {
@@ -46,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, button {
 }
 h1 {
 	font-size: 36px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000;
 	letter-spacing: 1.8px;
 	line-height: 44px;
@@ -54,7 +55,7 @@ h1 {
 }
 h2 {
 	font-size: 26px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000;
 	letter-spacing: 1.3px;
 	line-height: 35px;
@@ -65,7 +66,7 @@ h2 {
 }
 h3 {
 	font-size: 16px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #000;
 	letter-spacing: 1.6px;
 	line-height: 26px;
@@ -75,7 +76,7 @@ h3 {
 }
 p {
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: 400;
 	color: #000;
 	letter-spacing: 0.8px;
 	line-height: 26px;
