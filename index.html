@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/styles/base.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <script type="text/javascript" src="./assets/scripts/script.js"></script>
+    <script type="text/javascript" src="./assets/scripts/moonScroller.js"></script>
 </head>
 <body>
     <nav class="nav-bar__wrapper" id="nav-bar">
@@ -61,12 +62,17 @@
 
     <!-- Homesite x-scroller section -->
     <section class="section__wrapper">
-        <div class="section__container__scroller">
+        
+        <div class="section__container__scroller" onscroll="scrollerHandleScroll(event)">
             <div class="scroller__item"></div>
             <div class="scroller__item__alt"></div>
             <div class="scroller__item"></div>
             <div class="scroller__item__alt"></div>
             <div class="scroller__item"></div>
+        </div>
+
+        <div class="scroller__scroll-bar">
+            <div class="scroller__scroll-bar__control" onmousedown="scrollerMouseDownHandler(event)"></div>
         </div>
     </section>
 
@@ -143,7 +149,7 @@
                     <li><hr class="footer__line__vertical"></li>
                     <li><a class="footer__links__link" href="./pages/terms-of-use.html">TERMS OF USE</a></li>
                     <li><hr class="footer__line__vertical"></li>
-                    <li><a class="footer__links__link" href="">WEBSITE DESIGNED BY ZION</a></li>
+                    <li><a class="footer__links__link" href="">WEBSITE DESIGNED BY ARCTIC</a></li>
                 </ul>
             </div>
         </div>

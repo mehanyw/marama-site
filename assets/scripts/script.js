@@ -5,3 +5,4 @@ window.onscroll = () => {
     else
         document.getElementById('nav-bar').setAttribute('scrolled', false);
 }
+
