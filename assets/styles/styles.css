@@ -9,7 +9,6 @@
     100% { opacity: 1; }
 }
 
-
 /* Buttons */
 .button__default,
 .button__white,
@@ -69,10 +68,10 @@ nav {
     letter-spacing: 1.4px;
     z-index: 999;
 
-    -webkit-animation: opacityAnimation 1s ease;
-    -moz-animation: opacityAnimation 1s ease;
-    -o-animation: opacityAnimation 1s ease;
-    animation: opacityAnimation 1s ease;
+    -webkit-animation: opacityAnimation 0.1s ease;
+    -moz-animation: opacityAnimation 0.1s ease;
+    -o-animation: opacityAnimation 0.1s ease;
+    animation: opacityAnimation 0.1s ease;
 }
 .nav-bar__wrapper {
     position: fixed;
@@ -115,11 +114,23 @@ nav {
     margin: 0px 50px 0px 50px;
     background-color: transparent;
 }
-.nav-bar__logo {
+.nav-bar__logo,
+.nav-bar__logo__white {
     height: 20px;
     max-height: 20px;
     width: auto;
     cursor: pointer;
+}
+.nav-bar__logo {
+    display: none;
+}
+.nav-bar__wrapper[scrolled=true] .nav-bar__logo,
+.nav-bar__wrapper[scrolled=false] .nav-bar__logo__white {
+    display: block;
+}
+.nav-bar__wrapper[scrolled=false] .nav-bar__logo,
+.nav-bar__wrapper[scrolled=true] .nav-bar__logo__white {
+    display: none;
 }
 .nav-bar__links__container {
 	position: relative;
@@ -226,6 +237,7 @@ nav {
 .section__container__middle-stats {
     display: grid;
     grid-template-columns: repeat(3,minmax(0, 1fr));
+    column-gap: 120px;
 }
 .middle-stats__item {
     display: flex;
@@ -233,11 +245,17 @@ nav {
 }
 .middle-stats__item__header {
     display: flex;
-    align-items: flex-start;
-    justify-content: baseline;
+    align-items: flex-end;
+    column-gap: 10px;
 }
-.middle-stats__item__header > .stats {
-
+.p__stats {
+	font-size: 60px;
+    letter-spacing: 3px;
+	line-height: 73px;
+    margin: 0px 0px;
+}
+.h3__stats {
+    margin: 5px 0px;
 }
 
 /* Section: grid */
@@ -262,18 +280,21 @@ nav {
 .grid__item__start {
     align-items: flex-start;
 }
-.grid__item__container__img {
-
-}
-.grid__item__logo {
-
+.grid__item__logo__sm {
+    height: 25px;
+    width: auto;
+    margin: 20px 0px;
 }
 .grid__placeholder {
     width: 720px;
     height: 600px;
     background-color: blanchedalmond;
 }
-
+.grid__placeholder__h500 {
+    width: 720px;
+    height: 500px;
+    background-color: blanchedalmond;
+}
 .align__right {
     text-align: right;
 }
@@ -288,23 +309,52 @@ nav {
     grid-auto-columns: auto;
     padding: 0px 0px 25px 0px; /* Offset the custom scrollbar */
     overflow-x: scroll;
-    /* scroll-snap-type: x mandatory; */
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
 }
-.section__container__scroller > * {
-    /* scroll-snap-align: start; */
-}
 .scroller__item {
+    display: flex;
     width: 480px;
+    min-width: 480px;
+    max-width: 480px;
     height: 600px;
     background-color: antiquewhite;
 }
-.scroller__item__alt {
-    width: 480px;
+.scroller__item__lg {
+    display: flex;
+    width: 100vw;
     height: 600px;
     background-color: #aaa;
 }
+.scroller__item__alt {
+    display: flex;
+    width: 480px;
+    min-width: 480px;
+    max-width: 480px;
+    height: 600px;
+    background-color: #aaa;
+}
+.scroller__item__lg__alt {
+    display: flex;
+    width: 100vw;
+    height: 600px;
+    background-color: antiquewhite;
+}
+.scroller__item__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+}
+.scroller__item__button {
+    align-self: flex-end;
+}
+.scroller__item__button .button__default {
+    font-size: 15px;
+	letter-spacing: 1.5px;
+}
+
 /* Custom scrollbar */
 .section__container__scroller::-webkit-scrollbar {
     height: 0px; /* Remove default scrollbar */
@@ -365,12 +415,28 @@ nav {
     height: 350px;
     background-color: #aaa;
     border-radius: 0px;
+    margin-bottom: 40px;
     cursor: pointer;
     -webkit-transition: border-radius 0.2s ease;
     transition: border-radius 0.2s ease;
 }
 .homesites__item__img:hover {
     border-radius: 33px;
+}
+.homesites__item__header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.homesites__item__header {
+    font-size: 30px;
+	letter-spacing: 3px;
+	line-height: 37px;
+	margin: 0px 0px;
+}
+.homesites__item__sub-header {
+	margin: 0px 0px;
 }
 
 /* Footer */

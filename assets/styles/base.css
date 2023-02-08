@@ -1,29 +1,29 @@
 /* Fonts */
 @font-face {
-    font-family: 'ProximaNova';
-    src: url(../fonts/proximanova-medium-webfont.woff) format(woff), 
-         url(../fonts/proximanova-medium-webfont.woff2) format(woff2);
+    font-family: "ProximaNova";
     font-weight: 500;
 	font-style: normal;
+    src: url("../fonts/proximanova-medium-webfont.woff") format("woff"), 
+         url("../fonts/proximanova-medium-webfont.woff2") format("woff2");
 }
 @font-face {
     font-family: 'ProximaNova';
-    src: url(../fonts/proximanova-mediumit-webfont.woff) format(woff), 
-         url(../fonts/proximanova-mediumit-webfont.woff2) format(woff2);
+    src: url("../fonts/proximanova-mediumit-webfont.woff") format("woff"), 
+         url("../fonts/proximanova-mediumit-webfont.woff2") format("woff2");
     font-weight: 500;
     font-style: italic;
 }
 @font-face {
     font-family: 'ProximaNova';
-    src: url(../fonts/proximanova-regular-webfont.woff) format(woff), 
-         url(../fonts/proximanova-regular-webfont.woff2) format(woff2);
+    src: url("../fonts/proximanova-regular-webfont.woff") format("woff"), 
+         url("../fonts/proximanova-regular-webfont.woff2") format("woff2");
     font-weight: 400;
 	font-style: normal;
 }
 @font-face {
     font-family: 'ProximaNova';
-    src: url(../fonts/proximanova-regularit-webfont.woff) format(woff), 
-         url(../fonts/proximanova-regularit-webfont.woff2) format(woff2);
+    src: url("../fonts/proximanova-regularit-webfont.woff") format("woff"), 
+         url("../fonts/proximanova-regularit-webfont.woff2") format("woff2");
     font-weight: 400;
     font-style: italic;
 }
@@ -70,6 +70,7 @@ h3 {
 	color: #000;
 	letter-spacing: 1.6px;
 	line-height: 26px;
+	margin: 10px 0px
 }
 .header__tight {
 	line-height: 20px;
@@ -97,16 +98,6 @@ button {
 	color: #000;
 }
 
-/* Stats <p class=”stats”>
-Proxima Nova, Regular - 60px
-Font Family: Proxima Nova
-Font Weight: Regular
-Font Size: 60px
-Color: #000000
-Character Spacing: 50
-Line Spacing: 73
-
-Paragraph <p>
 
 
 
