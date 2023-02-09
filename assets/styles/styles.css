@@ -86,21 +86,26 @@ nav {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+.nav-bar__wrapper.nav-bar__white,
 .nav-bar__wrapper[scrolled=true] {
     background-color: white;
     /* height: 90px; */
 }
+.nav-bar__wrapper.nav-bar__white .nav-bar__link,
 .nav-bar__wrapper[scrolled=true] .nav-bar__link {
     color: #000;
 }
+.nav-bar__wrapper.nav-bar__white .nav-bar__link::after,
 .nav-bar__wrapper[scrolled=true] .nav-bar__link::after {
     background: #000;
 }
+.nav-bar__wrapper.nav-bar__white .nav-bar__button,
 .nav-bar__wrapper[scrolled=true] .nav-bar__button {
     background-color: transparent;
     border: 2px solid #000;
     color: #000;
 }
+.nav-bar__wrapper.nav-bar__white .nav-bar__button:hover,
 .nav-bar__wrapper[scrolled=true] .nav-bar__button:hover {
     color: #fff;
     background-color: #000;
@@ -124,6 +129,7 @@ nav {
 .nav-bar__logo {
     display: none;
 }
+.nav-bar__white .nav-bar__logo,
 .nav-bar__wrapper[scrolled=true] .nav-bar__logo,
 .nav-bar__wrapper[scrolled=false] .nav-bar__logo__white {
     display: block;
@@ -208,7 +214,8 @@ nav {
 }
 
 /* Section wrapper */
-.section__wrapper {
+.section__wrapper,
+.section__wrapper__tight {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,6 +228,19 @@ nav {
 }
 .section__gray {
     background-color: #aaa;
+}
+.section__wrapper__tight {
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Section: text (just text) */
+.section__container__full-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1050px;
+    text-align: left;
 }
 
 /* Section: middle-text */
@@ -236,8 +256,9 @@ nav {
 /* Section: middle-stats */
 .section__container__middle-stats {
     display: grid;
-    grid-template-columns: repeat(3,minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 120px;
+    margin-top: 30px;
 }
 .middle-stats__item {
     display: flex;
@@ -395,7 +416,7 @@ nav {
     background-color: #aaa;
 }
 
-/* Homesites */
+/* Section: homesites */
 .section__container__homesites {
     align-self: center;
     display: grid;
@@ -409,6 +430,7 @@ nav {
     flex-direction: column;
     align-items: center;
     max-width: 500px;
+    text-decoration: none;
 }
 .homesites__item__img {
     width: 500px;
@@ -437,6 +459,11 @@ nav {
 }
 .homesites__item__sub-header {
 	margin: 0px 0px;
+}
+
+/* Section: legal text */
+.section__container__text {
+
 }
 
 /* Footer */
@@ -519,4 +546,17 @@ nav {
     height: 100%;
     margin: 0px;
     padding: 0px;
+}
+
+/* Resources */
+.resources__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 10px 0px;
+}
+.hero__resources {
+    height: auto;
+    background-color: white;
 }
