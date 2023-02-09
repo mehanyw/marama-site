@@ -13,8 +13,11 @@
 .button__default,
 .button__white,
 .button__red {
-    height: 40px;
-    max-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px; /* 40 - (padding+border) */
+    max-height: 18px; /* 40 - (padding+border) */
     padding: 10px 30px 10px 30px;
     border-radius: 22px;
     opacity: 1;
@@ -232,6 +235,9 @@ nav {
 .section__wrapper__tight {
     margin: 0px 0px;
     padding: 0px 0px 0px 0px;
+}
+.nav__top-margin {
+    margin-top: var(--nav-bar__height);
 }
 
 /* Section: text (just text) */

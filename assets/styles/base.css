@@ -83,19 +83,24 @@ p {
 	line-height: 26px;
 	margin: 10px 0px;
 }
-button {
+button, a {
 	font-size: 16px;
 	letter-spacing: 1.6px;
     line-height: 18px;
 	margin: 20px 0px
 }
-
+a {
+	text-decoration: none;
+}
 /* Text modifiers */
 .text__white {
 	color: #fff;
 }
 .text__black {
 	color: #000;
+}
+.text__center {
+	text-align: center;
 }
 
 
