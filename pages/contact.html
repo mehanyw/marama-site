@@ -26,13 +26,13 @@
     </nav>
 
     <!-- Grid section: text-left -->
-    <section class="section__wrapper">
+    <section class="section__wrapper nav__top-margin">
         <div class="section__container__grid">
             <!-- col 1 -->
-            <div class="grid__item__wrapper">
-                <div class="grid__item__container grid__item__end">
-                    <h3>CONTACT MARAMA</h3>
-                    <h2>Whether it’s a custom home, interest in one of our homesites, or general questions, we got you covered. Have a more specific question? Contact us directly with the info below.</h2>
+            <div class="grid__item__wrapper align__start">
+                <div class="grid__item__container">
+                    <h3>CONTACT US</h3>
+                    <h2>Fill out the form to receive information about the buying process, building a custom home, or for any other questions about Marama. Or contact our Sotheby’s agent directly below.</h2>
                     <p>
                         Jenny Johnson
                         <br>
@@ -42,18 +42,33 @@
                         <br>
                         570 Lakeshore Blvd, Incline Village, NV 89451
                     </p>
-                    <a href="./contact.html" class="button__red">LET'S CONNECT</a>
                 </div>
             </div>
 
             <!-- col 2: contact section -->
             <div class="grid__item__wrapper">
-                <div class="grid__item__container__img">
-                    <div class="grid__placeholder"></div>
+                <form action="" class="grid__item__container__contact">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name*" class="contact__input" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name*" class="contact__input" required>
+                    <input type="email" id="email" name="email" placeholder="Email*" class="contact__input" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number*" class="contact__input" required>
+                    <input type="text" id="zip" name="zip" inputmode="numeric" pattern="[0-9]*" placeholder="Current Zip Code*" class="contact__input" required>
+                    <input type="text" id="referred-by" name="referred-by" placeholder="How Did You Hear About Us?" class="contact__input">
+                    <input type="submit" value="Submit" class="button__default contact__input__submit">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Middle text section -->
+    <section class="section__wrapper section__gray">
+        <div class="section__container__middle-text">
+            <h1 class="text__white">The Site of Your New Home</h1>
+            <p class="text__white">Explore our limited collection of homesites available now.</p>
+            <a href="./home-sites.html" class="button__white">EXPLORE HOMESITES</a>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer__wrapper">

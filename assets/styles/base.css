@@ -92,6 +92,11 @@ button, a {
 a {
 	text-decoration: none;
 }
+input {
+	font-size: 16px;
+	letter-spacing: 1.6px;
+    line-height: 20px;
+}
 /* Text modifiers */
 .text__white {
 	color: #fff;
