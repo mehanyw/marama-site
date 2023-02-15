@@ -15,10 +15,12 @@ function scrollerHandleScroll(scroller)
         return;
     
     // Get the scrubber relative to the parent (that way we don't have to worry about ids)
-    scrubber = scroller.parentElement.querySelector('.scroller__scroll-bar__control')        
+    scrubber = scroller.parentElement.querySelector('.scroller__scroll-bar__control');
 
     // The max we can scroll the scrubber is the body width - the scrubber itself - 30px horizontal padding
-    let maxScrubberScrollWidth = document.body.clientWidth - (scrubberWidth * 2) - 60;    
+    let scrollBar = scroller.parentElement.querySelector('.scroller__scroll-bar')  
+    let maxScrubberScrollWidth = scrollBar.clientWidth - (scrubberWidth * 2) - 60;
+        
 
     /**
      * To calculate the percent we scrolled for the scroller grid:
@@ -44,8 +46,8 @@ function scrollerMouseMoveHandler(e)
 {    
     e.preventDefault();
     if (fDown)
-    {
-        let maxScrubberScrollWidth = document.body.clientWidth - (scrubberWidth * 2) - 60;        
+    {   
+        let maxScrubberScrollWidth = scrubber.parentElement.clientWidth - (scrubberWidth * 2) - 60;
 
         // Limit our scrubber scroll to the page
         let offset = e.clientX - scrubberWidth;
@@ -53,10 +55,10 @@ function scrollerMouseMoveHandler(e)
             offset = maxScrubberScrollWidth + 30;
         if (offset <= 30)
             offset = 30;
-        scrubber.style.left = `${offset}px`;        
-
-        // Get our scroller content relative to the parent (again, no dealing with ids)
-        let scroller = scrubber.parentElement.parentElement.querySelector('.scroller__content');        
+        scrubber.style.left = `${offset}px`;
+        
+        // Get our scroller content and scrollBar relative to the parent (again, no dealing with ids)
+        let scroller = scrubber.parentElement.parentElement.querySelector('.scroller__content');     
 
         /**
          * To calculate the offset, we realize that we don't scroll the width of the grid.
