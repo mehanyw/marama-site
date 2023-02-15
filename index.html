@@ -11,7 +11,9 @@
 <body>
     <!-- Nav -->
     <nav class="nav-bar__wrapper" id="nav-bar">
+        <!-- Desktop -->
         <div class="nav-bar__container">
+            <!-- FIXME: logo height and classes -->
             <div class="nav-bar__logo"><a href="./index.html"><img src="./assets/images/logos/marama-logo.svg" alt="MARAMA"></a></div>
             <div class="nav-bar__logo__white"><a href="./index.html"><img src="./assets/images/logos/marama-logo-white.svg" alt="MARAMA"></a></div>
             <div class="nav-bar__links__container">
@@ -23,10 +25,37 @@
                 <a href="./pages/contact.html" class="button__white nav-bar__button">RESERVE TOUR</a>
             </div>
         </div>
+
+        <!-- TODO: -->
+        <!-- Mobile nav -->
+        <div class="nav-bar__mobile__container">
+            <div class="nav-bar__mobile__left">
+                <!-- <button class="nav-bar__mobile__button"><img class="nav-bar__mobile__button__img" src="./assets/images/icons/mobile-nav.svg" alt=""></button> -->
+
+                <!-- nav toggle -->
+                <button class="nav-bar__mobile__button__toggle" onclick="openNav(this)">
+                    <span class="nav-bar__mobile__button__toggle__line"></span>
+                    <span class="nav-bar__mobile__button__toggle__line"></span>
+                    <span class="nav-bar__mobile__button__toggle__line short"></span>  
+                </button>
+
+                <a href="./index.html"><img src="./assets/images/logos/marama-logo-sm.svg" alt="MARAMA" class="nav-bar__mobile__logo"></a>
+            </div>
+            <a href="./pages/contact.html" class="button__white nav-bar__mobile__button">RESERVE</a>
+
+            <div class="nav-bar__mobile__links__container" id="nav-bar__mobile__links">
+                <a class="nav-bar__mobile__link" href="./pages/community.html">COMMUNITY</a>
+                <a class="nav-bar__mobile__link" href="./pages/home-sites.html">HOMESITES</a>
+                <a class="nav-bar__mobile__link" href="./pages/amenities.html">AMENITIES</a>
+                <a class="nav-bar__mobile__link" href="./pages/about.html">ABOUT</a>
+                <a class="nav-bar__mobile__link" href="">(949) 123-4567</a>
+                <a class="nav-bar__mobile__link" href="">RESERVE TOUR</a>
+            </div>
+        </div>
     </nav>
 
-    <!-- TODO: -->
-    <!-- Mobile nav -->
+    
+    
 
 
     <!-- Hero section -->
@@ -46,7 +75,7 @@
     <section class="section__wrapper">
         <div class="section__container__grid">
             <!-- col 1 -->
-            <div class="grid__item__wrapper grid__first">
+            <div class="grid__item__wrapper">
                 <div class="grid__item__container grid__item__end">
                     <div class="grid__item__logo__sm"><img src="./assets/images/logos/marama-logo-sm.svg" alt=""></div>
                     <h2 class="align__right">A lyrical word in the Maori language, Marama is layered with meaning—moon, wisdom, and the light of the world.</h2>
@@ -56,7 +85,7 @@
             </div>
 
             <!-- col 2 -->
-            <div class="grid__item__wrapper grid__last">
+            <div class="grid__item__wrapper">
                 <div class="grid__item__container__img">
                     <div class="grid__placeholder"></div>
                 </div>
@@ -67,58 +96,58 @@
     <!-- Homesite x-scroller section -->
     <section class="section__wrapper">
         <div class="section__container__scroller" onscroll="scrollerHandleScroll(event)">
-            <div class="scroller__item" id="sc-1">
+            <div class="scroller__item">
                 <div class="scroller__item__container">
                     <div class="scroller__item__title">
-                        <h2>HOMESITE 1</h2>
-                        <p>X,000 SQ FT</p>
+                        <h2 class="text__white">HOMESITE 1</h2>
+                        <p class="text__white">X,000 SQ FT</p>
                     </div>
                     <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__default">EXPLORE</a>
+                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
                     </div>
                 </div>
             </div>
-            <div class="scroller__item__alt" id="sc-2">
+            <div class="scroller__item">
                 <div class="scroller__item__container">
                     <div class="scroller__item__title">
-                        <h2>HOMESITE 2</h2>
-                        <p>X,000 SQ FT</p>
+                        <h2 class="text__white">HOMESITE 2</h2>
+                        <p class="text__white">X,000 SQ FT</p>
                     </div>
                     <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__default">EXPLORE</a>
+                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
                     </div>
                 </div>
             </div>
-            <div class="scroller__item" id="sc-3">
+            <div class="scroller__item">
                 <div class="scroller__item__container">
                     <div class="scroller__item__title">
-                        <h2>HOMESITE 3</h2>
-                        <p>X,000 SQ FT</p>
+                        <h2 class="text__white">HOMESITE 3</h2>
+                        <p class="text__white">X,000 SQ FT</p>
                     </div>
                     <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__default">EXPLORE</a>
+                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
                     </div>
                 </div>
             </div>
-            <div class="scroller__item__alt" id="sc-4">
+            <div class="scroller__item">
                 <div class="scroller__item__container">
                     <div class="scroller__item__title">
-                        <h2>HOMESITE 4</h2>
-                        <p>X,000 SQ FT</p>
+                        <h2 class="text__white">HOMESITE 4</h2>
+                        <p class="text__white">X,000 SQ FT</p>
                     </div>
                     <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__default">EXPLORE</a>
+                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
                     </div>
                 </div>
             </div>
-            <div class="scroller__item" id="sc-5">
+            <div class="scroller__item">
                 <div class="scroller__item__container">
                     <div class="scroller__item__title">
-                        <h2>HOMESITE 5</h2>
-                        <p>X,000 SQ FT</p>
+                        <h2 class="text__white">HOMESITE 5</h2>
+                        <p class="text__white">X,000 SQ FT</p>
                     </div>
                     <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__default">EXPLORE</a>
+                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
                     </div>
                 </div>
             </div>
@@ -132,20 +161,29 @@
     <section class="section__wrapper">
         <div class="section__container__grid">
             <!-- col 1 -->
-            <div class="grid__item__wrapper grid__last">
+            <div class="grid__item__wrapper">
                 <div class="grid__item__container__img">
                     <div class="grid__placeholder"></div>
                 </div>
             </div>
 
             <!-- col 2 -->
-            <div class="grid__item__wrapper grid__first">
+            <div class="grid__item__wrapper">
                 <div class="grid__item__container grid__item__start">
                     <h3>AN ELEVATED PERSPECTIVE</h3>
                     <h2>Soaring elevation, stunning views, and wide-open nature inspire an enlightened life high above it all.</h2>
-                    <p>X,000</p>
-                    <p>X,000</p>
-                    <p>X,000</p>
+                    <div class="grid__item__stats">
+                        <p class="p__stats">X,000</p>
+                        <h3 class="no__margin">TOTAL ACRES</h3>
+                    </div>
+                    <div class="grid__item__stats">
+                        <p class="p__stats">X,000</p>
+                        <h3 class="no__margin">TOTAL ACRES</h3>
+                    </div>
+                    <div class="grid__item__stats">
+                        <p class="p__stats">X,000</p>
+                        <h3 class="no__margin">TOTAL ACRES</h3>
+                    </div>
                 </div>
             </div>
 

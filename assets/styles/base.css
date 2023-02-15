@@ -40,6 +40,12 @@ body {
     overflow: auto;
     overflow-x: hidden;
 }
+body[fixed=true] {
+	position: fixed;
+}
+body[fixed=false] {
+	position: static;
+}
 
 /* Text basics */
 h1, h2, h3, h4, h5, h6, p, a, li, button {
@@ -91,11 +97,6 @@ button, a {
 }
 a {
 	text-decoration: none;
-}
-input {
-	font-size: 16px;
-	letter-spacing: 1.6px;
-    line-height: 20px;
 }
 /* Text modifiers */
 .text__white {
