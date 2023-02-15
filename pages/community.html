@@ -115,14 +115,16 @@
 
     <!-- Large x-scroller section -->
     <section class="section__wrapper">
-        <div class="section__container__scroller" onscroll="scrollerHandleScroll(event)">
-            <div class="scroller__item__lg"></div>
-            <div class="scroller__item__lg"></div>
-            <div class="scroller__item__lg"></div>
-            <div class="scroller__item__lg"></div>
-        </div>
-        <div class="scroller__scroll-bar">
-            <div class="scroller__scroll-bar__control" onmousedown="scrollerMouseDownHandler(event)"></div>
+        <div class="section__container__scroller"> 
+            <div class="scroller__content" onscroll="scrollerHandleScroll(this)">
+                <div class="scroller__item__lg"></div>
+                <div class="scroller__item__lg"></div>
+                <div class="scroller__item__lg"></div>
+                <div class="scroller__item__lg"></div>
+            </div>
+            <div class="scroller__scroll-bar">
+                <div class="scroller__scroll-bar__control" onmousedown="scrollerMouseDownHandler(this)"></div>
+            </div>
         </div>
     </section>
 

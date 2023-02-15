@@ -95,65 +95,67 @@
 
     <!-- Homesite x-scroller section -->
     <section class="section__wrapper">
-        <div class="section__container__scroller" onscroll="scrollerHandleScroll(event)">
-            <div class="scroller__item">
-                <div class="scroller__item__container">
-                    <div class="scroller__item__title">
-                        <h2 class="text__white">HOMESITE 1</h2>
-                        <p class="text__white">X,000 SQ FT</p>
+        <div class="section__container__scroller"> 
+            <div class="scroller__content" onscroll="scrollerHandleScroll(this)">
+                <div class="scroller__item">
+                    <div class="scroller__item__container">
+                        <div class="scroller__item__title">
+                            <h2 class="text__white">HOMESITE 1</h2>
+                            <p class="text__white">X,000 SQ FT</p>
+                        </div>
+                        <div class="scroller__item__button">
+                            <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
+                        </div>
                     </div>
-                    <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
+                </div>
+                <div class="scroller__item">
+                    <div class="scroller__item__container">
+                        <div class="scroller__item__title">
+                            <h2 class="text__white">HOMESITE 2</h2>
+                            <p class="text__white">X,000 SQ FT</p>
+                        </div>
+                        <div class="scroller__item__button">
+                            <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroller__item">
+                    <div class="scroller__item__container">
+                        <div class="scroller__item__title">
+                            <h2 class="text__white">HOMESITE 3</h2>
+                            <p class="text__white">X,000 SQ FT</p>
+                        </div>
+                        <div class="scroller__item__button">
+                            <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroller__item">
+                    <div class="scroller__item__container">
+                        <div class="scroller__item__title">
+                            <h2 class="text__white">HOMESITE 4</h2>
+                            <p class="text__white">X,000 SQ FT</p>
+                        </div>
+                        <div class="scroller__item__button">
+                            <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroller__item">
+                    <div class="scroller__item__container">
+                        <div class="scroller__item__title">
+                            <h2 class="text__white">HOMESITE 5</h2>
+                            <p class="text__white">X,000 SQ FT</p>
+                        </div>
+                        <div class="scroller__item__button">
+                            <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="scroller__item">
-                <div class="scroller__item__container">
-                    <div class="scroller__item__title">
-                        <h2 class="text__white">HOMESITE 2</h2>
-                        <p class="text__white">X,000 SQ FT</p>
-                    </div>
-                    <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
-                    </div>
-                </div>
+            <div class="scroller__scroll-bar">
+                <div class="scroller__scroll-bar__control" onmousedown="scrollerMouseDownHandler(this)"></div>
             </div>
-            <div class="scroller__item">
-                <div class="scroller__item__container">
-                    <div class="scroller__item__title">
-                        <h2 class="text__white">HOMESITE 3</h2>
-                        <p class="text__white">X,000 SQ FT</p>
-                    </div>
-                    <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="scroller__item">
-                <div class="scroller__item__container">
-                    <div class="scroller__item__title">
-                        <h2 class="text__white">HOMESITE 4</h2>
-                        <p class="text__white">X,000 SQ FT</p>
-                    </div>
-                    <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
-                    </div>
-                </div>
-            </div>
-            <div class="scroller__item">
-                <div class="scroller__item__container">
-                    <div class="scroller__item__title">
-                        <h2 class="text__white">HOMESITE 5</h2>
-                        <p class="text__white">X,000 SQ FT</p>
-                    </div>
-                    <div class="scroller__item__button">
-                        <a href="./pages/home-sites/home-sites-detail.html" class="button__white">EXPLORE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroller__scroll-bar">
-            <div class="scroller__scroll-bar__control" onmousedown="scrollerMouseDownHandler(event)"></div>
         </div>
     </section>
 
@@ -192,14 +194,16 @@
 
     <!-- Large x-scroller section -->
     <section class="section__wrapper">
-        <div class="section__container__scroller" onscroll="scrollerHandleScroll(event)">
-            <div class="scroller__item__lg"></div>
-            <div class="scroller__item__lg__alt"></div>
-            <div class="scroller__item__lg"></div>
-            <div class="scroller__item__lg__alt"></div>
-        </div>
-        <div class="scroller__scroll-bar">
-            <div class="scroller__scroll-bar__control" onmousedown="scrollerMouseDownHandler(event)"></div>
+        <div class="section__container__scroller"> 
+            <div class="scroller__content" onscroll="scrollerHandleScroll(this)">
+                <div class="scroller__item__lg"></div>
+                <div class="scroller__item__lg__alt"></div>
+                <div class="scroller__item__lg"></div>
+                <div class="scroller__item__lg__alt"></div>
+            </div>
+            <div class="scroller__scroll-bar">
+                <div class="scroller__scroll-bar__control" onmousedown="scrollerMouseDownHandler(this)"></div>
+            </div>
         </div>
     </section>
 

@@ -481,6 +481,12 @@ nav {
 
 /* Section: scroller */
 .section__container__scroller {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 100%;
+}
+.scroller__content {
     display: grid;
     width: 100%;
     min-width: 100%;
@@ -522,20 +528,25 @@ nav {
 }
 
 /* Custom scrollbar */
-.section__container__scroller::-webkit-scrollbar {
+.scroller__content::-webkit-scrollbar {
     height: 0px; /* Remove default scrollbar */
 } 
 .scroller__scroll-bar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
     width: 100%;
     min-width: 100%;
     max-width: 100%;
     height: var(--scroller__scroll-bar__height);
     max-height: var(--scroller__scroll-bar__height);
     background-color: #000;
+}
+.scroller__scroll-bar.short {
+    width: calc(100% - 150px);
+    min-width: calc(100% - 150px);
+    max-width: calc(100% - 150px);
+    margin-bottom: 65px;
 }
 .scroller__scroll-bar__control {
     position: absolute;
