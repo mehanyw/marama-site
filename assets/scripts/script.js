@@ -15,10 +15,6 @@ function openNav(navButton)
         navWrapper.hasAttribute('open') ? navWrapper.toggleAttribute('open') : navWrapper.setAttribute('open', true);
         navButton.hasAttribute('open') ? navButton.toggleAttribute('open') : navButton.setAttribute('open', true);
         navLinks.hasAttribute('open') ? navLinks.toggleAttribute('open') : navLinks.setAttribute('open', true);
-        document.body.hasAttribute('fixed') ? document.body.toggleAttribute('fixed') : document.body.setAttribute('fixed', true);
-
-        
-        // navLinks.setAttribute('open', true);
-        // document.body.setAttribute('fixed', true);
+        // document.body.hasAttribute('fixed') ? document.body.toggleAttribute('fixed') : document.body.setAttribute('fixed', true);
     }
 }

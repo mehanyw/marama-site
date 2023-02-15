@@ -89,6 +89,14 @@ p {
 	line-height: 26px;
 	margin: 10px 0px;
 }
+li {
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	letter-spacing: 0.8px;
+	line-height: 26px;
+	margin: 0px 0px;
+}
 button, a {
 	font-size: 16px;
 	letter-spacing: 1.6px;
