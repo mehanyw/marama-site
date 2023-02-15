@@ -147,10 +147,6 @@ nav {
     flex-direction: row;
     gap: 15px;
 }
-.nav-bar__mobile__logo,
-.nav-bar__mobile__button__img {
-    height: 20px;
-}
 .nav-bar__mobile__button,
 .nav-bar__mobile__button__toggle {
     background: none;
@@ -234,7 +230,9 @@ nav {
     }
 }
 .nav-bar__logo,
-.nav-bar__logo__white {
+.nav-bar__logo__white,
+.nav-bar__logo img,
+.nav-bar__logo__white img {
     height: 20px;
     max-height: 20px;
     width: auto;
