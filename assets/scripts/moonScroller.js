@@ -20,17 +20,17 @@ function scrollerHandleScroll(e)
     scroller = e.target;
     scrubber = scroller.nextElementSibling.children[0];
 
-    // The max we can scroll the scrubber is the body width - the scrubber itself
-    let maxScrubberScrollWidth = document.body.clientWidth - (scrubberWidth * 2);
+    // The max we can scroll the scrubber is the body width - the scrubber itself - 30px horizontal padding
+    let maxScrubberScrollWidth = document.body.clientWidth - (scrubberWidth * 2) - 60;    
 
     /**
      * To calculate the percent we scrolled for the scroller grid:
      *  Use how many pixels we scrolled (.scrollLeft) / (the max scroll width for the grid (.scrollWidth) - the total body width)
      */
-    let offsetPercent = (scroller.scrollLeft) / (scroller.scrollWidth - document.body.clientWidth); 
+    let offsetPercent = (Math.round(scroller.scrollLeft)) / (scroller.scrollWidth - document.body.clientWidth); 
     
-    // Multiply our percent with the scrubber max scroll to get exact positioning of scrubber
-    scrubber.style.left = `${offsetPercent * maxScrubberScrollWidth}px`;    
+    // Multiply our percent with the scrubber max scroll to get exact positioning of scrubber (then add 30px for padding)
+    scrubber.style.left = `${Math.round(offsetPercent * maxScrubberScrollWidth) + 30}px`;    
 }
 
 /** Handles our scrubber */
@@ -45,29 +45,20 @@ function scrollerMouseDownHandler(e)
     document.addEventListener('mousemove', scrollerMouseMoveHandler);
     document.addEventListener('mouseup', scrollerMouseUpHandler);    
 }
-// function scrollerMouseOverHandler()
-// {
-//     console.log('here');
-    
-//     // if (!fDown)
-//     //     scroller.style.transform = `scale(1.3)`;
-// }
 function scrollerMouseMoveHandler(e)
 {    
     e.preventDefault();
     if (fDown)
     {
-        let maxScrubberScrollWidth = document.body.clientWidth - (scrubberWidth * 2);
-        // let maxScrollWidth = document.body.clientWidth - (scrubberWidth * 2);
+        let maxScrubberScrollWidth = document.body.clientWidth - (scrubberWidth * 2) - 60;
 
         // Limit our scrubber scroll to the page
-        let offset = e.pageX - scrubberWidth;        
-        if (offset > maxScrubberScrollWidth)
-            offset = maxScrubberScrollWidth;
-        if (offset <= 0)
-            offset = 0;
-
-        scrubber.style.left = `${offset}px`;
+        let offset = e.clientX - scrubberWidth;
+        if (offset > maxScrubberScrollWidth + 30)
+            offset = maxScrubberScrollWidth + 30;
+        if (offset <= 30)
+            offset = 30;
+        scrubber.style.left = `${offset}px`;        
 
         // Scrolls our slider
         let scroller = scrubber.parentElement.previousElementSibling;
@@ -77,7 +68,7 @@ function scrollerMouseMoveHandler(e)
          *  We only scroll the part that not on the screen. So, we subtract the visible document width from the whole grid width
          */
         let offsetPercent  = offset / maxScrubberScrollWidth;
-        let scrollerOffset = offsetPercent * (scroller.scrollWidth - document.body.clientWidth);
+        let scrollerOffset = Math.round(offsetPercent * (scroller.scrollWidth - document.body.clientWidth));        
         scroller.scroll(scrollerOffset, 0);
     }
 }
