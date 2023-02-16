@@ -484,7 +484,7 @@ nav {
 .grid__item__line {
     width: 100%;
     max-width: 600px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     margin: 0px 0px 70px 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -500,7 +500,7 @@ nav {
     background-color: #aaa;
 }
 .grid__placeholder__h500 {
-    width: 720px;
+    width: 100%;
     height: 500px;
     background-color: #aaa;
 }
@@ -516,6 +516,10 @@ nav {
 }
 
 /* Section: scroller */
+.section__scroller__title {
+    margin: 0px 0px 15px 195px;
+    align-self: flex-start;
+}
 .section__container__scroller {
     display: flex;
     flex-direction: column;
@@ -538,10 +542,10 @@ nav {
     gap: 60px;
 }
 .scroller__content.spaced .scroller__item__small:first-child {
-    margin-left: 100px;
+    margin-left: 195px;
 }
 .scroller__content.spaced .scroller__item__small:last-child {
-    margin-right: 100px;
+    margin-right: 195px;
 }
 .scroller__item {
     display: flex;
@@ -550,6 +554,7 @@ nav {
     max-width: 480px;
     height: 600px;
     background-color: #aaa;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 .scroller__item__small {
     display: flex;
@@ -563,6 +568,7 @@ nav {
     width: 100vw;
     height: 600px;
     background-color: #aaa;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 .scroller__item__container {
     display: flex;
