@@ -270,6 +270,7 @@ nav {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 10px 0px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
