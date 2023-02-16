@@ -332,16 +332,28 @@ nav {
 .hero__container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
     width: 100%;
     max-width: 100%;
+    height: calc(100% - var(--nav-bar__height));
+    max-height: calc(100% - var(--nav-bar__height));
     margin: var(--nav-bar__height) 0px 0px 0px;
 }
-.hero__header {
+/* .hero__header {
     display: flex;
     flex-direction: column;
     margin: 60px auto 100px 100px;
     padding: 0px 50px 50px 50px;
     max-width: 525px;
+} */
+.hero__header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 140px 150px;
+    /* margin: 60px auto 80px 100px; */
+    /* padding: 60px 0px 50px 50px; */
+    max-width: 510px;
 }
 
 /* Section wrapper */
@@ -424,6 +436,14 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0px;
+    width: 100%;
+    max-width: 1920px;
+}
+.section__container__grid .grid__item__wrapper:nth-child(1) {
+    align-items: flex-end;
+}
+.section__container__grid .grid__item__wrapper:nth-child(2) {
+    align-items: flex-start;
 }
 @media (max-width: 1260px) {
     .section__container__grid {
@@ -452,6 +472,9 @@ nav {
 	max-width: 480px;
     padding: 0px 120px;
 }
+.grid__item__container__img {
+    width: 100%;
+}
 .grid__item__end {
     align-items: flex-end;
 }
@@ -472,7 +495,7 @@ nav {
     margin: 20px 0px;
 }
 .grid__placeholder {
-    width: 720px;
+    width: 100%;
     height: 600px;
     background-color: #aaa;
 }
@@ -511,6 +534,15 @@ nav {
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
 }
+.scroller__content.spaced {
+    gap: 60px;
+}
+.scroller__content.spaced .scroller__item__small:first-child {
+    margin-left: 100px;
+}
+.scroller__content.spaced .scroller__item__small:last-child {
+    margin-right: 100px;
+}
 .scroller__item {
     display: flex;
     width: 480px;
@@ -518,6 +550,13 @@ nav {
     max-width: 480px;
     height: 600px;
     background-color: #aaa;
+}
+.scroller__item__small {
+    display: flex;
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 425px;
 }
 .scroller__item__lg {
     display: flex;
@@ -538,6 +577,28 @@ nav {
 .scroller__item__button .button__default {
     font-size: 15px;
 	letter-spacing: 1.5px;
+}
+
+.scroller__item__small__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* padding: 30px; */
+}
+.scroller__item__small__img {
+    width: 100%;
+    height: 350px;
+    background-color: #aaa;
+    border-radius: 0px;
+    cursor: pointer;
+    -webkit-transition: border-radius 0.2s ease;
+    transition: border-radius 0.2s ease;
+}
+.scroller__item__small__img:hover {
+    border-radius: 33px;
 }
 
 /* Custom scrollbar */
