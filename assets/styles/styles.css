@@ -1,5 +1,5 @@
 :root {
-    --nav-bar__height: 120px;    
+    --nav-bar__height: 90px;    
     --scroller__scroll-bar__height: 2px;
 }
 
@@ -553,7 +553,7 @@ nav {
     width: 480px;
     min-width: 480px;
     max-width: 480px;
-    height: 600px;
+    height: 480px;
     background-color: #aaa;
     border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
