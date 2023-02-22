@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
     height: 40px;
     max-height: 40px;
     width: max-content;
@@ -841,4 +842,13 @@ nav {
 }
 .contact__input__submit {
     margin-top: 30px;
+}
+
+/* Tax advantage */
+.inline__link {
+	color: #000;
+	letter-spacing: 0.8px;
+	line-height: 26px;
+	margin: 10px 0px;
+    text-decoration: underline;
 }
