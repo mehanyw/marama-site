@@ -121,6 +121,12 @@ input::placeholder {
 .text__black {
 	color: #000;
 }
-.text__center {
+.align__center {
 	text-align: center;
+}
+.align__right {
+    text-align: right;
+}
+.align__left {
+    text-align: left;
 }
