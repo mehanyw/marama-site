@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="../../assets/styles/styles.css">
 </head>
 <body>
-    <nav class="nav-bar__wrapper nav-bar__white" id="nav-bar-white">
+    <nav class="nav-bar__wrapper nav-bar__white" id="nav-bar">
         <div class="nav-bar__container">
             <div class="nav-bar__logo"><a href="../../index.html"><img src="../../assets/images/logos/marama-logo.svg" alt="MARAMA"></a></div>
-            <div class="nav-bar__logo__white"><a href="../../index.html"><img src="../../assets/images/logos/marama-logo-white.svg" alt="MARAMA"></a></div>
             <div class="nav-bar__links__container">
                 <a class="nav-bar__link" href="../community.html">COMMUNITY</a>
                 <a class="nav-bar__link selected" href="../homesites.html">HOMESITES</a>
@@ -31,7 +30,7 @@
             <!-- col 1 -->
             <div class="grid__item__wrapper">
                 <div class="grid__item__container__img">
-                    <div class="grid__placeholder__h500"></div>
+                    <div class="grid__placeholder"></div>
                 </div>
             </div>
 
@@ -39,10 +38,9 @@
             <div class="grid__item__wrapper">
                 <div class="grid__item__container">
                     <h1>Homesite 1</h1>
+                    <h3>ADDRESS</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        <br><br>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Marama is Northern Nevada’s most exciting new enclave, conveniently located just minutes from [Insert key location.] Residents enjoy an elevated Sierra lifestyle with 360 degree views of [insert landscape] and access to the Hunter Creek trailhead for miles of hiking and biking. Situated on X,000 unspoiled acres, homesites here aren’t merely built on the land, they are stitched into the landscape.
                     </p>
                     <p class="margin-top__20">HIGHLIGHTS</p>
                     <ul class="grid__item__list">
@@ -66,17 +64,27 @@
 
     <!-- Map section-->
     <section class="section__wrapper">
-        <div class="section__container__map">
-
-        </div>
+        <div class="section__container__map"></div>
+        <div class="map__placeholder__title"><h1 class="text__white">INTERACTIVE MAP</h1></div>
     </section>
 
     <!-- Contact section-->
     <section class="section__wrapper">
-        <div class="section__container__middle-text">
-            <h1>CONTACT INFO HERE</h1>
-            <!-- <p>Rising from the scenic foothills of Southwest Reno and lit by the moonlight of the expansive western sky, an exclusive residential enclave captures the mystique of its name: Marama.</p> -->
-            <button class="button__default">SUBMIT</button>
+        <div class="section__container__contact">
+            <h1>Contact Us for More Information</h1>
+            <p>Contact us using the form below and an agent will be in touch to discuss your future home.</p>
+            
+            <div class="section__container__contact__form">
+                <form action="" class="grid__item__container__contact">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name*" class="contact__input" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name*" class="contact__input" required>
+                    <input type="email" id="email" name="email" placeholder="Email*" class="contact__input" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number*" class="contact__input" required>
+                    <input type="text" id="zip" name="zip" inputmode="numeric" pattern="[0-9]*" placeholder="Current Zip Code*" class="contact__input" required>
+                    <input type="text" id="referred-by" name="referred-by" placeholder="How Did You Hear About Us?" class="contact__input">
+                    <input type="submit" value="Submit" class="button__default contact__input__submit">
+                </div>
+            </div>
         </div>
     </section>
 

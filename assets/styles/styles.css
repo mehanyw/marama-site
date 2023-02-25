@@ -551,6 +551,7 @@ nav {
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
+    padding-left: 15px;
     margin: 10px 0px;
 }
 
@@ -754,6 +755,14 @@ nav {
 
 .margin-top__20 {
     margin-top: 20px;
+}
+
+/* Section: contact */
+.section__container__contact {
+    
+}
+.section__container__contact__form {
+
 }
 
 /* Footer */
