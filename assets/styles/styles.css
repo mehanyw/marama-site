@@ -889,6 +889,7 @@ nav {
 .footer__links > li,
 .footer__links > a,
 .footer__links__link {
+    align-self: center;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1.4px;
@@ -947,7 +948,6 @@ nav {
     display: grid;
     grid-auto-flow: column;
     column-gap: 20px;
-    align-self: center;
     margin: 0px;
     padding: 0px;
 }
