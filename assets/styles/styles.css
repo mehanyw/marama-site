@@ -321,6 +321,7 @@ nav {
     height: 900px;
     width: 100%;
     background-color: #aaa;
+    overflow: hidden;
 }
 .hero__wrapper__alt {
     display: flex;
@@ -359,6 +360,10 @@ nav {
     flex-direction: column;
     margin: 0px auto 140px 150px;
     max-width: 510px;
+}
+.hero__img {
+    width: 100%;
+    height: auto;
 }
 
 /* Section wrapper */
@@ -520,7 +525,7 @@ nav {
         width: calc(100% - 60px);
     }
 }
-.grid__placeholder,
+.grid__item__img,
 .grid__placeholder__h500 {
     width: 100%;
     height: 600px;
@@ -530,7 +535,7 @@ nav {
     height: 500px;
 }
 @media (max-width: 1260px) {
-    .grid__placeholder {
+    .grid__item__img {
         height: 230px;
     }
 }
@@ -615,6 +620,10 @@ nav {
     height: 600px;
     background-color: #aaa;
     border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.scroller__item__lg__img {
+    width: 100%;
+    height: auto;
 }
 .scroller__item__container {
     display: flex;
