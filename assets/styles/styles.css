@@ -713,12 +713,13 @@ nav {
     margin: 0px;
 }
 .scroller__item__small__img {
-    width: 100%;
+    width: 500px;
     height: 350px;
     margin: 0px;
     background-color: #aaa;
     border-radius: 0px;
     cursor: pointer;
+    object-fit: cover;
     -webkit-transition: border-radius 0.2s ease;
     transition: border-radius 0.2s ease;
 }
