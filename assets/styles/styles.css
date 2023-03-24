@@ -618,6 +618,9 @@ nav {
     padding-left: 15px;
     margin: 10px 0px;
 }
+.grid__item__list.wide {
+    grid-template-columns: auto;
+}
 
 /* Section: scroller */
 .section__title__scroller {
