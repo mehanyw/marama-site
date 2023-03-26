@@ -10,44 +10,40 @@
     <link rel="stylesheet" href="../assets/styles/styles.css">
 </head>
 <body>
+    <!-- Nav -->
     <nav class="nav-bar__wrapper" id="nav-bar">
         <div class="nav-bar__container">
-            <div class="nav-bar__logo"><a href="../index.html"><img src="../assets/images/logos/marama-logo.svg" alt="MARAMA"></a></div>
-            <div class="nav-bar__logo__white"><a href="../index.html"><img src="../assets/images/logos/marama-logo-white.svg" alt="MARAMA"></a></div>
-            <div class="nav-bar__links__container">
-                <a class="nav-bar__link" href="./community.html">COMMUNITY</a>
-                <a class="nav-bar__link" href="./homesites.html">HOMESITES</a>
-                <a class="nav-bar__link selected" href="./amenities.html">AMENITIES</a>
-                <a class="nav-bar__link" href="./about.html">ABOUT</a>
-                <a class="nav-bar__link" href="">(775) 384-6900</a>
-                <a href="./contact.html" class="button__white nav-bar__button">RESERVE TOUR</a>
+            <!-- FIXME: logo height and classes -->
+
+            <!-- Desktop logos -->
+            <div class="nav-bar__left">
+                <a href="../index.html" class="nav-bar__logo"><img src="../assets/images/logos/marama-logo.svg" alt="MARAMA"></a>
+                <a href="../index.html" class="nav-bar__logo__white"><img src="../assets/images/logos/marama-logo-white.svg" alt="MARAMA"></a>
             </div>
-        </div>
-
-        <!-- Mobile nav -->
-        <div class="nav-bar__mobile__container">
-            <!-- <div class="nav-bar__mobile__overlay"></div> -->
-            <div class="nav-bar__mobile__left">
-                <!-- Nav toggle -->
-                <button class="nav-bar__mobile__button__toggle" onclick="openNav(this)">
-                    <span class="nav-bar__mobile__button__toggle__line"></span>
-                    <span class="nav-bar__mobile__button__toggle__line"></span>
-                    <span class="nav-bar__mobile__button__toggle__line short"></span>  
-                </button>
-
+            
+            <!-- Mobile logos and toggle -->
+            <div class="nav-bar__left mobile">
                 <a href="../index.html" class="nav-bar__logo"><img src="../assets/images/logos/marama-logo-sm.svg" alt="MARAMA"></a>
                 <a href="../index.html" class="nav-bar__logo__white"><img src="../assets/images/logos/marama-logo-white-sm.svg" alt="MARAMA"></a>
-            </div>
-            <a href="./contact.html" class="button__white nav-bar__mobile__button">RESERVE</a>
 
-            <div class="nav-bar__mobile__links__container" id="nav-bar__mobile__links">
-                <a class="nav-bar__mobile__link" href="./community.html">COMMUNITY</a>
-                <a class="nav-bar__mobile__link" href="./homesites.html">HOMESITES</a>
-                <a class="nav-bar__mobile__link" href="./amenities.html">AMENITIES</a>
-                <a class="nav-bar__mobile__link" href="./about.html">ABOUT</a>
-                <a class="nav-bar__mobile__link" href="">(775) 384-6900</a>
-                <a class="nav-bar__mobile__link" href="">RESERVE TOUR</a>
+                <!-- Nav toggle -->
+                <button class="nav-bar__toggle" onclick="openNav(this)">
+                    <span class="nav-bar__toggle__line"></span>
+                    <span class="nav-bar__toggle__line"></span>
+                    <span class="nav-bar__toggle__line short"></span>  
+                </button>
             </div>
+
+            <!-- Links -->
+            <div class="nav-bar__links__container" id="nav-bar__links">
+                <a class="nav-bar__link" href="./community.html">COMMUNITY</a>
+                <a class="nav-bar__link" href="./homesites.html">HOMESITES</a>
+                <a class="nav-bar__link" href="./amenities.html">AMENITIES</a>
+                <a class="nav-bar__link" href="./about.html">ABOUT</a>
+                <a class="nav-bar__link" href="">(775) 384-6900</a>
+                <a href="./contact.html" class="button__white">RESERVE TOUR</a>
+            </div>
+            <a href="./contact.html" class="button__white nav-bar__button__action">RESERVE</a>
         </div>
     </nav>
 
