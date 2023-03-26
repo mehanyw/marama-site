@@ -59,6 +59,13 @@ h1 {
 	line-height: 44px;
 	margin: 10px 0px;
 }
+@media (max-width: 768px) {
+	h1 {
+		font-size: 20px;
+		letter-spacing: 1.0px;
+		line-height: 24px;
+	}
+}
 h2 {
 	font-size: 26px;
 	font-weight: 500;
@@ -67,8 +74,12 @@ h2 {
 	line-height: 35px;
 	margin: 10px 0px;
 }
-.header__wide {
-	letter-spacing: 100px;
+@media (max-width: 768px) {
+	h2 {
+		font-size: 18px;
+		letter-spacing: 0.9px;
+		line-height: 28px;
+	}
 }
 h3 {
 	font-size: 16px;
@@ -78,8 +89,12 @@ h3 {
 	line-height: 26px;
 	margin: 10px 0px
 }
-.header__tight {
-	line-height: 20px;
+@media (max-width: 768px) {
+	h3 {
+		font-size: 14px;
+		letter-spacing: 1.4px;
+		line-height: 26px;
+	}
 }
 p {
 	font-size: 16px;
@@ -103,6 +118,12 @@ button, a {
     line-height: 18px;
 	margin: 20px 0px
 }
+@media (max-width: 768px) {
+	button, a {
+		font-size: 14px;
+		letter-spacing: 1.4px;
+	}
+}
 a {
 	text-decoration: none;
 }
@@ -114,6 +135,7 @@ input::placeholder {
     letter-spacing: 1.6px;
     line-height: 20px;
 }
+
 /* Text modifiers */
 .text__white {
 	color: #fff;
@@ -129,4 +151,58 @@ input::placeholder {
 }
 .align__left {
     text-align: left;
+}
+.header__wide {
+	letter-spacing: 100px;
+}
+.header__tight {
+	line-height: 20px;
+}
+
+/* Buttons */
+.button__default,
+.button__white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 40px;
+    max-height: 40px;
+    width: max-content;
+    padding: 10px 30px 10px 30px;
+    border-radius: 22px;
+    box-sizing: border-box;
+    opacity: 1;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all ease 0.2s;
+}
+.button__default {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+.button__white {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+.button__white:hover,
+.button__default:hover {
+    color: #fff;
+    border: 2px solid #B13A00;
+    background-color: #B13A00;
+}
+@media (max-width: 1280px) {
+    .button__default,
+    .button__white {
+        height: 27px;
+        max-height: 27px;
+        padding: 2px 20px 2px 20px;
+        border-width: 1.5px;
+    }
+    .button__white:hover,
+    .button__default:hover {
+        border-width: 1.5px;
+    }
 }
