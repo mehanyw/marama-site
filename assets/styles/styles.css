@@ -824,7 +824,7 @@ nav {
     .footer__container {
         row-gap: 30px;
         padding: 0px;
-        margin: 0px 40px 50px 40px;
+        margin: 20px 30px 50px 30px;
     }
 }
 
@@ -840,7 +840,9 @@ nav {
 .footer__links__container {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     column-gap: 100px;
+    row-gap: 30px;
 }
 .footer__links {
     list-style-type: none;
@@ -872,17 +874,17 @@ nav {
 }
 .footer__logo__sm {
     display: none;
-    height: 20px;
-    max-height: 20px;
-    width: auto;
-    cursor: pointer;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1280px) {
     .footer__logo {
         display: none;
     }
     .footer__logo__sm {
         display: block;
+        height: 20px;
+        max-height: 20px;
+        width: auto;
+        cursor: pointer;
     }
 }
 
