@@ -838,19 +838,18 @@ nav {
     width: 100%;
     max-width: 100%;
 }
+.footer__links__container {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 100px;
+}
 .footer__links {
     list-style-type: none;
     display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 100px;
+    grid-template-columns: auto;
     row-gap: 30px;
     margin: 0px;
     padding: 0px;
-}
-@media (max-width: 1280px) {
-    .footer__links {
-        grid-template-columns: auto;
-    }
 }
 .footer__links > li,
 .footer__links > a,
