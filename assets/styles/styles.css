@@ -800,6 +800,7 @@ nav {
 /* Custom scrollbar */
 .scroller__content::-webkit-scrollbar {
     height: 0px; /* Remove default scrollbar */
+    display: none;
 } 
 .scroller__scroll-bar {
     display: flex;
