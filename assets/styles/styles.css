@@ -308,9 +308,8 @@ nav {
     align-content: flex-start;
     width: 100%;
     max-width: 100%;
-    height: calc(100% - var(--nav-bar__height));
-    max-height: calc(100% - var(--nav-bar__height));
-    margin: var(--nav-bar__height) 0px 0px 0px;
+    height: 100%;
+    max-height: 100%;
 }
 .hero__header {
     position: absolute;
