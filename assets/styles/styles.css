@@ -463,7 +463,6 @@ nav {
     }
 }
 
-/* TODO: rename this */
 /* Section: text (just text) */
 .section__container__full-text {
     display: flex;
@@ -471,6 +470,7 @@ nav {
     justify-content: center;
     max-width: 1050px;
     text-align: left;
+    margin: 0px 40px;
 }
 
 /* Section: middle-stats */
