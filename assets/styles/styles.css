@@ -289,6 +289,11 @@ nav {
     width: 100%;
     background-color: #aaa;
 }
+@media (max-width: 768px) {
+    .hero__wrapper__md {
+        height: 500px;
+    }
+}
 .hero__wrapper__alt__two,
 .hero__wrapper__sm {
     display: flex;
@@ -298,6 +303,11 @@ nav {
     max-height: 500px;
     width: 100%;
     background-color: #aaa;
+}
+@media (max-width: 768px) {
+    .hero__wrapper__sm {
+        height: 400px;
+    }
 }
 @media (max-width: 1260px) {
     .hero__wrapper {
@@ -321,6 +331,12 @@ nav {
     margin: 0px auto 140px 150px;
     max-width: 510px;
     z-index: 3;
+}
+@media (max-width: 768px) {
+    .hero__header {
+        margin: 0px auto 50px 40px;
+        /* max-width: 510px; */
+    }
 }
 .hero__img,
 .hero__img__sm {
