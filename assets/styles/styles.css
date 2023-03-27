@@ -609,7 +609,7 @@ nav {
     object-position: center;
     height: 500px;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1280px) {
     .grid__item__img {
         height: 230px;
     }
@@ -849,6 +849,11 @@ nav {
     height: 600px;
     max-height: 600px;
     background-color: #aaa;
+}
+@media (max-width: 1280px) {
+    .section__container__map {
+        height: 230px;
+    }
 }
 .map__placeholder__title {
     position: absolute;
