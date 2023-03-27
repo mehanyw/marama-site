@@ -124,9 +124,12 @@ nav {
     transition-delay: 0.1s;
     width: 100%;
 }
-.nav-bar__wrapper[scrolled=true] .nav-bar__toggle__line {
+.nav-bar__wrapper[scrolled=true]:not(.nav-bar__wrapper[open=true]) .nav-bar__toggle__line {
     background-color: #222;
 }
+/* .nav-bar__wrapper[scrolled=true]:not(.nav-bar__toggle[open=true]) .nav-bar__toggle__line {
+    
+} */
 .nav-bar__wrapper:not(.nav-bar__white)[scrolled=false] .nav-bar__toggle__line {
     background-color: white;
 }
@@ -146,17 +149,17 @@ nav {
 .nav-bar__wrapper[scrolled=false] .nav-bar__logo {
     display: none;
 }
-.nav-bar__wrapper.nav-bar__white .nav-bar__logo,
-.nav-bar__wrapper[scrolled=true] .nav-bar__logo,
+.nav-bar__wrapper.nav-bar__white:not(.nav-bar__wrapper[open=true]) .nav-bar__logo,
+.nav-bar__wrapper[scrolled=true]:not(.nav-bar__wrapper[open=true]) .nav-bar__logo,
 .nav-bar__wrapper[scrolled=false] .nav-bar__logo__white {
     display: block;
 }
 .nav-bar__wrapper:not(.nav-bar__white)[scrolled=false] .nav-bar__logo,
-.nav-bar__wrapper:not(.nav-bar__white)[scrolled=true] .nav-bar__logo__white {
+.nav-bar__wrapper:not(.nav-bar__white)[scrolled=true]:not(.nav-bar__wrapper[open=true]) .nav-bar__logo__white {
     display: none;
 }
-.nav-bar__wrapper.nav-bar__white[scrolled=true] .nav-bar__logo__white,
-.nav-bar__wrapper.nav-bar__white[scrolled=false] .nav-bar__logo__white {
+.nav-bar__wrapper.nav-bar__white[scrolled=true]:not(.nav-bar__wrapper[open=true]) .nav-bar__logo__white,
+.nav-bar__wrapper.nav-bar__white[scrolled=false]:not(.nav-bar__wrapper[open=true]) .nav-bar__logo__white {
     display: none;
 }
 
@@ -227,37 +230,37 @@ nav {
 .nav-bar__link.selected::after {
     opacity: 1;
 }
-.nav-bar__wrapper.nav-bar__white .nav-bar__link,
-.nav-bar__wrapper[scrolled=true] .nav-bar__link {
-    color: #000;
+.nav-bar__wrapper.nav-bar__white:not(.nav-bar__wrapper[open=true]) .nav-bar__link,
+.nav-bar__wrapper[scrolled=true]:not(.nav-bar__wrapper[open=true]) .nav-bar__link {
+    color: #222;
 }
 .nav-bar__wrapper.nav-bar__white .nav-bar__link::after,
 .nav-bar__wrapper[scrolled=true] .nav-bar__link::after {
-    background: #000;
+    background: #222;
 }
 .nav-bar__links__container .button__white {
     margin: 0px;
 }
-.nav-bar__wrapper.nav-bar__white .button__white,
-.nav-bar__wrapper[scrolled=true] .button__white {
+.nav-bar__wrapper.nav-bar__white:not(.nav-bar__wrapper[open=true]) .button__white,
+.nav-bar__wrapper[scrolled=true]:not(.nav-bar__wrapper[open=true]) .button__white {
     background-color: transparent;
     border: 2px solid #000;
     color: #000;
 }
-.nav-bar__wrapper.nav-bar__white .button__white:hover,
-.nav-bar__wrapper[scrolled=true] .button__white:hover {
+.nav-bar__wrapper.nav-bar__white:not(.nav-bar__wrapper[open=true]) .button__white:hover,
+.nav-bar__wrapper[scrolled=true]:not(.nav-bar__wrapper[open=true]) .button__white:hover {
     color: #fff;
     border: 2px solid #B13A00;
     background-color: #B13A00;
 }
 /* TODO: Find a cleaner solution for this */
 @media (max-width: 1280px) {
-    .nav-bar__wrapper.nav-bar__white .button__white,
-    .nav-bar__wrapper[scrolled=true] .button__white {
+    .nav-bar__wrapper.nav-bar__white:not(.nav-bar__wrapper[open=true]) .button__white,
+    .nav-bar__wrapper[scrolled=true]:not(.nav-bar__wrapper[open=true]) .button__white {
         border: 1.5px solid #000;
     }
-    .nav-bar__wrapper.nav-bar__white .button__white:hover,
-    .nav-bar__wrapper[scrolled=true] .button__white:hover {
+    .nav-bar__wrapper.nav-bar__white:not(.nav-bar__wrapper[open=true]) .button__white:hover,
+    .nav-bar__wrapper[scrolled=true]:not(.nav-bar__wrapper[open=true]) .button__white:hover {
         border: 1.5px solid #B13A00;
     }
 }
