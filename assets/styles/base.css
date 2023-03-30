@@ -118,12 +118,18 @@ button, a {
     line-height: 18px;
 	margin: 20px 0px
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
 	button, a {
 		font-size: 14px;
 		letter-spacing: 1.4px;
 	}
 }
+/* @media (max-width: 768px) {
+	button, a {
+		font-size: 14px;
+		letter-spacing: 1.4px;
+	}
+} */
 a {
 	text-decoration: none;
 }
