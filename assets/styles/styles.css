@@ -1027,6 +1027,24 @@ nav {
     .footer__links {
         grid-template-columns: auto;
     }
+    .footer__links li:nth-child(n+1) {
+        order: 1;
+    }
+    .footer__links li:nth-child(n+2) {
+        order: 3;
+    }
+    .footer__links li:nth-child(n+3) {
+        order: 2;
+    }
+    .footer__links li:nth-child(n+4) {
+        order: 4;
+    }
+    .footer__links li:nth-child(n+5) {
+        order: 5;
+    }
+    .footer__links li:nth-child(n+6) {
+        order: 6;
+    }
 }
 .footer__links > li,
 .footer__links > a,
@@ -1105,7 +1123,9 @@ nav {
     padding: 0px;
 }
 .footer__bottom__legal {
-    font-size: 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 12px;
 }
 .footer__line__vertical {
     height: 100%;
