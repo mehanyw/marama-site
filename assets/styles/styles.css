@@ -154,6 +154,15 @@ nav {
         max-height: 15px;
     }
 }
+@media (max-width: 768px) {
+    .nav-bar__logo,
+    .nav-bar__logo img,
+    .nav-bar__logo__white,
+    .nav-bar__logo__white img {
+        height: 20px;
+        max-height: 20px;
+    }
+}
 .nav-bar__wrapper .nav-bar__logo,
 .nav-bar__wrapper[scrolled=false] .nav-bar__logo {
     display: none;
