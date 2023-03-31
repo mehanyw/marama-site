@@ -1211,6 +1211,11 @@ nav {
 .contact__input__submit {
     margin-top: 30px;
 }
+@media (max-width: 768px) {
+    .contact__input__submit {
+        margin-left: auto;
+    }
+}
 .grid__item__container__contact__lg>[type=submit] {
     grid-column-start: span 2;
     justify-self: center;
