@@ -48,7 +48,7 @@ body[fixed=false] {
 }
 
 /* Text basics */
-h1, h2, h3, h4, h5, h6, p, a, li, button, input {
+h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea {
 	font-family: 'ProximaNova';
 }
 h1 {
@@ -133,8 +133,11 @@ button, a {
 a {
 	text-decoration: none;
 }
+
 input,
-input::placeholder {
+input::placeholder,
+textarea,
+textarea::placeholder {
 	font-size: 16px;
     font-weight: 500;
     color: #000;

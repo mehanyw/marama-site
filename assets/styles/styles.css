@@ -1101,6 +1101,9 @@ nav {
     margin: 0px;
     padding: 0px;
 }
+.footer__bottom__legal {
+    font-size: 12px;
+}
 .footer__line__vertical {
     height: 100%;
     margin: 0px;
@@ -1113,6 +1116,9 @@ nav {
     }
     .footer__bottom__links li:nth-child(even) {
         display: none;
+    }
+    .footer__bottom__legal {
+        font-size: 10px;
     }
 }
 
@@ -1154,12 +1160,24 @@ nav {
     max-height: 40px;
     padding: 10px 30px 10px 30px;
 }
-.contact__input__submit {
-    margin-top: 30px;
-}
+.contact__input:hover,
 .contact__input:focus {
     border: 2px solid #B13A00;
     outline: none;
+}
+.contact__text-area {
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 10px 30px 10px 30px;
+}
+.contact__text-area:hover,
+.contact__text-area:focus {
+    border: 2px solid #B13A00;
+    outline: none;
+}
+.contact__input__submit {
+    margin-top: 30px;
 }
 .grid__item__container__contact__lg>[type=submit] {
     grid-column-start: span 2;
