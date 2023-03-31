@@ -1027,22 +1027,22 @@ nav {
     .footer__links {
         grid-template-columns: auto;
     }
-    .footer__links li:nth-child(n+1) {
+    .footer__links li:nth-child(1) {
         order: 1;
     }
-    .footer__links li:nth-child(n+2) {
+    .footer__links li:nth-child(2) {
         order: 3;
     }
-    .footer__links li:nth-child(n+3) {
+    .footer__links li:nth-child(3) {
         order: 2;
     }
-    .footer__links li:nth-child(n+4) {
+    .footer__links li:nth-child(4) {
         order: 4;
     }
-    .footer__links li:nth-child(n+5) {
+    .footer__links li:nth-child(5) {
         order: 5;
     }
-    .footer__links li:nth-child(n+6) {
+    .footer__links li:nth-child(6) {
         order: 6;
     }
 }
