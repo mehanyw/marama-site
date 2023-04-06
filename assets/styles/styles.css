@@ -412,19 +412,11 @@ nav {
 /* Moon Video */
 .moon__video__scrollbar {
     position: absolute;
-    /* stroke-linecap: round; */
-    /* stroke-width: 2px; */
-    /* fill: white; */
-    /* bottom: 10%; */
-    /* left: 0px; */
-    /* right: 0px; */
-    /* height: 10px; */
-    /* background-color: white; */
     z-index: 2;
 }
-.moon__video__circle {
+/* .moon__video__circle {
 
-}
+} */
 
 /* Section wrapper */
 .section__wrapper,
