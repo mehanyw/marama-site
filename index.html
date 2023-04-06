@@ -49,14 +49,17 @@
     <!-- Hero section -->
     <section class="hero__wrapper__md">
         <div class="hero__container">
-            <img class="hero__img" src="./assets/images/home-hero.jpg" alt="">
-            <img class="hero__img__sm" src="./assets/images/home-hero-sm.jpg" alt="">
-            <!-- <video class="hero__video" width="" height="" autoplay="true" controls="true">
-                <source type="video/mp4" src="https://vimeo.com/814075111/3f22f32079">
-            </video> -->
-            <!-- <video autoplay="true" id="hero-video" loop="" muted="" poster="./assets/images/home-hero.jpg">
-                <source src="https://vimeo.com/814075111/3f22f32079" type="video/mp4" />
-            </video> -->
+            <!-- <img class="hero__img" src="./assets/images/home-hero.jpg" alt=""> -->
+            <!-- <img class="hero__img__sm" src="./assets/images/home-hero-sm.jpg" alt=""> -->
+            <video class="hero__video" id="hero__video" poster="./assets/images/home-hero.jpg" autoplay loop muted>
+                <source src="assets/video/home-hero.mp4" type="video/mp4" />
+            </video>
+            <!-- <svg class="moon__video" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M 0 80 L 100 80 Z" stroke="white" stroke-linecap="round" fill="none"/>
+                <circle class="moon__video__circle" cx="2" cy="80" r="1"/>
+            </svg> -->
+            
+            <!-- <path d="M 10 75 Q 50 10 100 75 T 190 75" stroke="black" stroke-linecap="round" fill="none"/> -->
         </div>
     </section>
 
@@ -269,6 +272,7 @@
 
     <script type="text/javascript" src="./assets/scripts/script.js"></script>
     <script type="text/javascript" src="./assets/scripts/moonScroller.js"></script>
+    <script type="text/javascript" src="./assets/scripts/videoMoonScroller.js"></script>
     
 </body>
 </html>

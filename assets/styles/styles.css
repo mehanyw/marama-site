@@ -310,7 +310,6 @@ nav {
     top: 0px;
     height: 900px;
     width: 100%;
-    background-color: #aaa;
     overflow: hidden;
 }
 @media (max-width: 1280px) {
@@ -325,7 +324,6 @@ nav {
     top: 0px;
     height: 700px;
     width: 100%;
-    background-color: #aaa;
 }
 @media (max-width: 1280px) {
     .hero__wrapper__md {
@@ -340,7 +338,6 @@ nav {
     height: 500px;
     max-height: 500px;
     width: 100%;
-    background-color: #aaa;
 }
 @media (max-width: 768px) {
     .hero__wrapper__sm {
@@ -412,6 +409,17 @@ nav {
     z-index: 2;
 }
 
+/* Moon Video */
+.moon__video {
+    position: absolute;
+    bottom: 0px;
+    stroke-width: 2px;
+    z-index: 2;
+}
+.moon__video__circle {
+
+}
+
 /* Section wrapper */
 .section__wrapper,
 .section__wrapper__tight {
@@ -433,9 +441,6 @@ nav {
         margin: 50px 0px;
         padding: 0px;
     }
-}
-.section__gray {
-    background-color: #aaa;
 }
 .section__wrapper__tight {
     margin: 0px 0px;
@@ -637,11 +642,9 @@ nav {
     }
 }
 .grid__item__img,
-.grid__item__img__sm,
-.grid__placeholder__h500 {
+.grid__item__img__sm {
     width: 100%;
     height: 600px;
-    background-color: #aaa;
     object-fit: cover;
     object-position: center;
 }
@@ -775,8 +778,7 @@ nav {
     min-width: 480px;
     max-width: 480px;
     height: 480px;
-    background-color: #aaa;
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
 }
 .scroller__item__small {
     display: flex;
@@ -796,8 +798,7 @@ nav {
     display: flex;
     width: 100vw;
     height: 600px;
-    background-color: #aaa;
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 768px) {
     .scroller__item__lg {
@@ -847,7 +848,6 @@ nav {
     width: 500px;
     height: 350px;
     margin: 0px;
-    background-color: #aaa;
     border-radius: 0px;
     cursor: pointer;
     object-fit: cover;
@@ -917,7 +917,6 @@ nav {
     min-width: 100%;
     height: 600px;
     max-height: 600px;
-    background-color: #aaa;
 }
 @media (max-width: 768px) {
     .section__container__map {
@@ -949,7 +948,6 @@ nav {
 .homesites__item__img {
     width: 500px;
     height: 350px;
-    background-color: #aaa;
     border-radius: 0px;
     margin-bottom: 40px;
     cursor: pointer;
