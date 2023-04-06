@@ -912,7 +912,7 @@ nav {
     max-width: 100%;
     min-width: 100%;
     height: auto;
-    max-height: 600px;
+    /* max-height: 600px; */
 }
 @media (max-width: 768px) {
     .section__container__map {
