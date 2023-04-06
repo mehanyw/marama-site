@@ -32,15 +32,18 @@ nav {
     min-width: 100%;
     max-width: 100%;
     background-color: transparent;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 .nav-bar__wrapper.nav-bar__white,
 .nav-bar__wrapper[scrolled=true] {
+    background: none;
     background-color: white;
 }
 @media (max-width: 1000px) {
     .nav-bar__wrapper[open=true] {
+        background: none;
         background-color: rgba(0, 0, 0, 0.75);
         height: 100%;
     }
@@ -373,6 +376,7 @@ nav {
         margin: 0px 40px 50px 40px;
     }
 }
+.hero__video,
 .hero__img,
 .hero__img__sm {
     position: static;

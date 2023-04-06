@@ -56,7 +56,7 @@ function scrollerMouseMoveHandler(e)
         if (offset <= 30)
             offset = 30;
         scrubber.style.left = `${offset}px`;
-        
+
         // Get our scroller content and scrollBar relative to the parent (again, no dealing with ids)
         let scroller = scrubber.parentElement.parentElement.querySelector('.scroller__content');     
 
@@ -64,7 +64,7 @@ function scrollerMouseMoveHandler(e)
          * To calculate the offset, we realize that we don't scroll the width of the grid.
          *  We only scroll the part that not on the screen. So, we subtract the visible document width from the whole grid width
          */
-        let offsetPercent  = offset / maxScrubberScrollWidth;
+        let offsetPercent  = (offset - 30) / maxScrubberScrollWidth;
         let scrollerOffset = Math.round(offsetPercent * (scroller.scrollWidth - document.body.clientWidth));
         scroller.scroll(scrollerOffset, 0);
     }
