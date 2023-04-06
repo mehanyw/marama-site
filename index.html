@@ -52,11 +52,15 @@
             <video class="hero__video" id="hero__video" poster="./assets/images/home-hero.jpg" autoplay loop muted>
                 <source src="assets/video/home-hero.mp4" type="video/mp4" />
             </video>
+            
             <svg id="moon__video__scrollbar" class="moon__video__scrollbar" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                 <path id="moon__video__scrollbar__track" stroke="white" stroke-linecap="round" stroke-width="2" fill="none"/>
-                <circle class="moon__video__circle" cx="2" cy="80" r="1"/>
+                <circle id="moon__video__scrollbar__circle" class="moon__video__circle" r="4" fill="white">
+                    <animateMotion dur="21s" repeatCount="indefinite" calcMode="linear">
+                        <mpath xlink:href="#moon__video__scrollbar__track" />   
+                    </animateMotion>
+                </circle>                
             </svg>
-            <!-- <path d="M 10 75 Q 50 10 100 75 T 190 75" stroke="black" stroke-linecap="round" fill="none"/> -->
         </div>
     </section>
 
