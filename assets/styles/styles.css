@@ -776,7 +776,6 @@ nav {
     min-width: 480px;
     max-width: 480px;
     height: 480px;
-    border-right: 1px solid rgba(255, 255, 255, 0.8);
 }
 .scroller__item__small {
     display: flex;
@@ -796,7 +795,6 @@ nav {
     display: flex;
     width: 100vw;
     height: 600px;
-    border-right: 1px solid rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 768px) {
     .scroller__item__lg {
