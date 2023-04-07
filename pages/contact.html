@@ -74,10 +74,51 @@
                     <input type="text" id="last-name" name="last-name" placeholder="Last Name*" class="contact__input" required>
                     <input type="email" id="email" name="email" placeholder="Email*" class="contact__input" required>
                     <input type="tel" id="phone" name="phone" placeholder="Phone Number*" class="contact__input" required>
-                    <input type="text" id="zip" name="zip" inputmode="numeric" pattern="[0-9]*" placeholder="Current Zip Code*" class="contact__input" required>
-                    <input type="text" id="referred-by" name="referred-by" placeholder="How Did You Hear About Us?" class="contact__input">
-                    <textarea id="question" name="question" placeholder="Questions or Comments" class="contact__text-area" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Submit" class="button__default contact__input__submit">
+                    <input type="text" id="zip" name="zip" inputmode="numeric" pattern="[0-9]*" placeholder="Zip Code*" class="contact__input" required>
+                    <select id="referred-by" name="referred-by" class="contact__select input__text">
+                        <option class="input__text" value="" disabled selected hidden>How did you hear about us?</option>
+                        <option class="input__text" value="friend">Friend</option>
+                        <option class="input__text" value="family">Family</option>
+                        <option class="input__text" value="sign">Sign</option>
+                        <option class="input__text" value="digital advertisement">Digital advertisement</option>
+                        <option class="input__text" value="zillow">Zillow</option>
+                        <option class="input__text" value="website">Website</option>
+                        <option class="input__text" value="search engine">Search engine</option>
+                        <option class="input__text" value="other">Other</option>
+                    </select>
+
+                    <!-- Are you a broker -->
+                    <div id="contact__radio" class="contact__radio" required>
+                        <p id="contact__radio__header" class="contact__radio__header input__text">Are you a broker?*</p>
+                        <div class="contact__radio__wrapper">
+                            <input type="radio" id="yes-broker" name="broker" value="Yes" required>
+                            <label for="yes-broker" class="contact__radio__label">
+                                <p class="input__text">Yes</p>
+                            </label>
+                            <input type="radio" id="no-broker" name="broker" value="No" required>
+                            <label for="no-broker" class="contact__radio__label">
+                                <p class="input__text">No</p>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Are you working with a broker -->
+                    <div id="contact__radio" class="contact__radio">
+                        <p id="contact__radio__header" class="contact__radio__header input__text">Are you working with a broker?*</p>
+                        <div class="contact__radio__wrapper">
+                            <input type="radio" id="with-broker" name="with-broker" value="Yes" required>
+                            <label for="with-broker" class="contact__radio__label">
+                                <p class="input__text">Yes</p>
+                            </label>
+                            <input type="radio" id="not-with-broker" name="with-broker" value="No" required>
+                            <label for="not-with-broker" class="contact__radio__label">
+                                <p class="input__text">No</p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- <textarea id="question" name="question" placeholder="Questions or Comments" class="contact__text-area" cols="30" rows="10"></textarea> -->
+                    <input id="submit" type="submit" value="SUBMIT" class="button__default contact__input__submit">
                 </div>
             </div>
         </div>

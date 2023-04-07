@@ -137,7 +137,9 @@ a {
 input,
 input::placeholder,
 textarea,
-textarea::placeholder {
+textarea::placeholder,
+label,
+.input__text {
 	font-size: 16px;
     font-weight: 500;
     color: #000;

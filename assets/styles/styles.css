@@ -1170,34 +1170,80 @@ nav {
 }
 
 /* Contact */
-.grid__item__container__contact,
-.grid__item__container__contact__lg {
+.grid__item__container__contact {
     align-self: flex-start;
     display: grid;
-    grid-template-columns: minmax(auto, 600px);
+    grid-template-columns: minmax(auto, 300px) minmax(auto, 300px);
     gap: 30px;
     margin: 10px 0px;
-}
-.grid__item__container__contact__lg {
-    grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
 }
 @media (max-width: 1280px) {
     .grid__item__container__contact {
         margin: 10px 40px;
     }
 }
-.contact__input {
+@media (max-width: 930px) {
+    .grid__item__container__contact {
+        grid-template-columns: minmax(auto, 600px);
+    }
+}
+.grid__item__container__contact #email,
+.grid__item__container__contact #referred-by,
+.grid__item__container__contact #question,
+.grid__item__container__contact #contact__radio,
+.grid__item__container__contact #submit {
+    grid-column-start: span 2;
+}
+@media (max-width: 930px) {
+    .grid__item__container__contact #email,
+    .grid__item__container__contact #referred-by,
+    .grid__item__container__contact #question,
+    .grid__item__container__contact #contact__radio,
+    .grid__item__container__contact #submit {
+        grid-column-start: span 1;
+    }
+}
+
+.contact__input,
+.contact__select {
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 0px;
     height: 40px;
     max-height: 40px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 20px 10px 20px;
 }
 .contact__input:hover,
-.contact__input:focus {
+.contact__input:focus,
+.contact__select:hover {
     border: 2px solid #B13A00;
     outline: none;
+}
+.contact__select {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+.contact__select:focus-visible {
+    outline: none;
+}
+.contact__radio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 25px;
+    
+}
+.contact__radio__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact__radio__header {
+    margin: 0px;
+}
+p.input__text {
+    margin: 0px;
 }
 .contact__text-area {
     box-sizing: border-box;
@@ -1218,11 +1264,6 @@ nav {
         margin-left: auto;
     }
 }
-.grid__item__container__contact__lg>[type=submit] {
-    grid-column-start: span 2;
-    justify-self: center;
-}
-
 
 /* Tax advantage */
 .inline__link {
