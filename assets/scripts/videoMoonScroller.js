@@ -12,7 +12,6 @@ window.onresize = () => updateMoonVideoScrollbarPosition();
 
 function updateMoonVideoScrollbarPosition()
 {
-	console.log(window.innerWidth);
 	moonVideoScrollbar.setAttribute('width', `${heroVideo.clientWidth}`);
 	moonVideoScrollbar.setAttribute('height', `${heroVideo.clientHeight}`);
 
