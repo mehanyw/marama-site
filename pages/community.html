@@ -85,8 +85,27 @@
 
     <!-- Map section-->
     <section class="section__wrapper">
-        <div class="section__container__map">
-            <img class="map__img" src="../assets/images/community/community-map.jpeg" alt="">
+        <div class="section__container__map" id="map">
+            <div id="map__container" class="map__img__container">
+                <map name="primary">
+                    <area class="map__marker" shape="square" coords="211,72,261,132" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=11&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="140,540,190,590" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=12&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="110,580,160,630" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=16&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">                    
+                    <area class="map__marker" shape="square" coords="410,400,460,450" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=0&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="590,100,640,150" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=1&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="180,430,230,480" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=2&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="264,190,314,240" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=3&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="390,250,440,300" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=5&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="700,545,750,595" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=6&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="715,440,765,490" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=7&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                    <area class="map__marker" shape="square" coords="205,490,255,540" href="https://visitingmedia.com/tt8/?ttid=new-edge-living-2#/360?group=0&tour=8&b11t0=1&a10ph=1&j2ck2=1&i2d0a=1" alt="">
+                </map>
+                <img id="map__img" class="map__img" usemap="#primary" src="../assets/images/community/community-map-pins.png" alt="">
+                <div class="map__controls">
+                    <button class="map__controls__button zoom__in" onclick="zoomIn()"></button>
+                    <button class="map__controls__button" onclick="zoomOut()"></button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -226,6 +245,7 @@
     <!-- scripts -->
     <script type="text/javascript" src="../assets/scripts/script.js"></script>
     <script type="text/javascript" src="../assets/scripts/moonScroller.js"></script>
+    <script type="text/javascript" src="../assets/scripts/mapPan.js"></script>
 
 </body>
 </html>

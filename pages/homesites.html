@@ -71,11 +71,29 @@
     </section>
 
     <!-- Map section-->
+    <!-- <section class="section__wrapper">
+        <div class="section__container__map" id="map">
+            <div id="map__container" class="map__img__container">
+                <canvas id="map__canvas" class="map__canvas" width="1440" height="600">
+                </canvas>
+                <div style="display:none;">
+                    <img id="map__img" src="../assets/images/community/community-map.jpeg" alt="">
+                </div>
+                <div class="map__controls">
+                    <button class="map__controls__button zoom__in" onclick="zoomIn()"></button>
+                    <button class="map__controls__button" onclick="zoomOut()"></button>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <section class="section__wrapper">
         <div class="section__container__map" id="map">
-            <img class="map__img" src="../assets/images/community/community-map.jpeg" alt="">
+            <div id="map__container" class="map__img__container">
+                <img class="map__img__static" src="../assets/images/community/community-map.jpeg" alt="">
+            </div>
         </div>
     </section>
+
 
     <!-- Grid section: homesites -->
     <!-- <section class="section__wrapper__tight">
@@ -210,7 +228,6 @@
     
     <!-- scripts -->
     <script type="text/javascript" src="../assets/scripts/script.js"></script>
-    <script type="text/javascript" src="../assets/scripts/interactiveMap.js"></script>
 
 </body>
 </html>
