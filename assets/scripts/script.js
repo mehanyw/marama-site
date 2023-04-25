@@ -17,3 +17,16 @@ function openNav(navButton)
         navLinks.hasAttribute('open')   ? navLinks.toggleAttribute('open')   : navLinks.setAttribute('open', true);    // Links wrapper (gray background)
     }
 }
+
+function openModal(link)
+{
+	if (!link)
+	{
+		console.log("Failed to load popup tour from Visiting Media");
+		return;
+	}
+
+	let mapPopup = document.getElementById('map__popup');
+	mapPopup.href = "https://" + link;
+	mapPopup.click();
+}

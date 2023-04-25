@@ -981,6 +981,12 @@ nav {
 .map__controls__button:active {
     scale: 1.1;
 }
+.map__marker {
+    cursor: pointer;
+}
+.map__popup {
+    display: none;
+}
 
 /* Section: homesites */
 .section__container__homesites {

@@ -51,7 +51,6 @@ function onMouseMove(e)
 	
 	let yOffset = e.clientY - dragStart.y;
 	let xOffset = e.clientX - dragStart.x;
-	console.log(zoomScale);
 	
 	if (zoomScale === 1)
 	{
