@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3WYMX2CL2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-X3WYMX2CL2');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,9 +78,8 @@
 
             <!-- col 2: contact section -->
             <div class="grid__item__wrapper">
-                <!-- mailto:jjohnson@sierrasothebysrealty.com -->
                 <!-- <form action="https://script.google.com/macros/s/AKfycbwc5I_sKWvJBPZw0xQzi43eo1M8n4Rz_MwtQQVq5BVk6egO99M_OhXhkX1g_2qk9lbOVw/exec" method="POST" class="grid__item__container__contact"> -->
-                <form action="https://formspree.io/f/xrgvoyzq" method="POST" class="grid__item__container__contact">
+                <form action="../contactMailer.php" method="POST" class="grid__item__container__contact">
                     <input type="text" id="first-name" name="first-name" placeholder="First Name*" class="contact__input" required>
                     <input type="text" id="last-name" name="last-name" placeholder="Last Name*" class="contact__input" required>
                     <input type="email" id="email" name="email" placeholder="Email*" class="contact__input" required>
