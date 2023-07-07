@@ -907,8 +907,15 @@ nav {
 .section__container__map {
     position: relative;
     width: 100%;
+    min-width: 100%;
     max-width: 1280px;
     height: auto;
+}
+@media (min-width: 1280px) {
+    .section__container__map {
+        min-width: 1280px;
+        max-width: 1280px;
+    }
 }
 @media (max-width: 768px) {
     .section__container__map {
