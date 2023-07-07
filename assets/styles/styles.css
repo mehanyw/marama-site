@@ -906,86 +906,14 @@ nav {
 /* Section: map */
 .section__container__map {
     position: relative;
-    display: flex;
-    justify-content: center;
     width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 1280px;
     height: auto;
 }
 @media (max-width: 768px) {
     .section__container__map {
         height: auto;
     }
-}
-.map__img__container {
-    position: relative;
-    width: 100%;
-    max-width: 1240px;
-    height: 600px;
-    max-height: 600px;
-    overflow: hidden;
-}
-.map__img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-}
-.map__img__static {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-}
-.map__controls {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    max-height: 90px;
-}
-.map__controls__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    max-width: 40px;
-    height: 40px;
-    max-height: 40px;
-    margin: 0px;
-    padding: 0px;
-    outline: none;
-    border: none;
-    border-radius: 40px;
-    background-color: white;
-    cursor: pointer;
-    transition: scale 0.1s ease-in-out;
-}
-.map__controls__button::before,
-.map__controls__button.zoom__in::after {
-    position: absolute;
-    content: ' ';
-    height: 2px;
-    width: 20px;
-    background-color: #333;
-}
-.map__controls__button::after {
-    rotate: 90deg;
-}
-.map__controls__button:hover {
-    scale: 1.05;
-}
-.map__controls__button:active {
-    scale: 1.1;
-}
-.map__marker {
-    cursor: pointer;
-}
-.map__popup {
-    display: none;
 }
 
 /* Section: homesites */
