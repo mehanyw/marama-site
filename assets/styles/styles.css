@@ -925,15 +925,16 @@ nav {
 .map__img__container {
     position: relative;
     width: 100%;
-    max-width: 1240px;
-    height: 600px;
-    max-height: 600px;
+    margin: 0px auto;
+    max-width: 1080px;
+    height: auto;
+    max-height: auto;
     overflow: hidden;
 }
 .map__img {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 /* Section: homesites */
