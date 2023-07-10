@@ -937,6 +937,21 @@ nav {
     height: 100%;
 }
 
+/* Section: Flip book */
+.section__container__flip-book {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    max-width: 1280px;
+    height: auto;
+}
+@media (min-width: 1280px) {
+    .section__container__flip-book {
+        min-width: 1280px;
+        max-width: 1280px;
+    }
+}
+
 /* Section: homesites */
 .section__container__homesites {
     align-self: center;
