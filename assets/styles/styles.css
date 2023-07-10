@@ -922,6 +922,19 @@ nav {
         height: auto;
     }
 }
+.map__img__container {
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    height: 600px;
+    max-height: 600px;
+    overflow: hidden;
+}
+.map__img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
 
 /* Section: homesites */
 .section__container__homesites {
