@@ -34,7 +34,7 @@ function openModal(link)
 function openModal(element, i) {
     // Get the modal and open it
     let modal = document.getElementById(`modal-${i}`);
-    modal.style.display = "block";
+    modal.style.display = "flex";
 
     // Get the <span> element that closes the modal
     let span = document.getElementsByClassName("close")[0];
