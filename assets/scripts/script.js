@@ -31,13 +31,13 @@ function openModal(link)
 	mapPopup.click();
 }
 
-function openModal(element) {
+function openModal(element, i) {
     // Get the modal and open it
-    var modal = document.getElementById("myModal");
+    let modal = document.getElementById(`modal-${i}`);
     modal.style.display = "block";
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[0];
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
