@@ -20,8 +20,8 @@ $mail->Password = $PASSWORD;
 
 // Email headers
 $mail->setFrom($USER_NAME, 'Live Marama');
-$mail->addAddress('mehanyw@gmail.com', 'Waseem Mehany');
-// $mail->addAddress('marama@sierrasothebysrealty.com', 'Jenny Johnson');
+// $mail->addAddress('mehanyw@gmail.com', 'Waseem Mehany');
+$mail->addAddress('marama@sierrasothebysrealty.com', 'Live Marama');
 $mail->Subject = 'Contact Form';
 
 // Email body
