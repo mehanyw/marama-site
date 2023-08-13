@@ -43,9 +43,28 @@ $mail->Body = <<<EOT
 	Are you working with a broker?: {$_POST["with-broker"]}
 EOT;
 
-if (!$mail->send()) {
-	echo '<script>alert("Sorry, try again!")</script>';
+// Captcha
+$captcha;
+if(isset($_POST['g-recaptcha-response'])){
+	$captcha=$_POST['g-recaptcha-response'];
+}
+if(!$captcha){
+	echo '<script>alert("Please check the the captcha form.")</script>';
+	exit;
+}
+$secretKey = "6LfUm6MnAAAAANxDeQMOlDrenB3if5z7gJ9l6iZW";
+// POST request to server
+$url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) . '&response=' . urlencode($captcha);
+$response = file_get_contents($url);
+$responseKeys = json_decode($response, true);
+// Should return JSON with success as true
+if($responseKeys["success"]) {
+	if (!$mail->send()) {
+		echo '<script>alert("Sorry, try again!")</script>';
+	} else {
+		header("Location:https://www.livemarama.com/pages/contactSuccess.html");
+	}
 } else {
-	header("Location:https://www.livemarama.com/pages/contactSuccess.html");
+	echo '<script>alert("Please check the the captcha form.")</script>';
 }
 ?>
