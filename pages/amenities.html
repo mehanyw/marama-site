@@ -11,6 +11,8 @@
         gtag('config', 'G-X3WYMX2CL2');
         gtag('config', 'AW-11226847768');
     </script>
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -145,9 +147,22 @@
                 <div class="scroller__item__small">
                     <div class="scroller__item__small__container">
                         <!-- <img class="scroller__item__small__img" src="../assets/images/ameneties/shot-12.png" alt="" onclick="openModal(0)"> -->
-                        
+                        <!-- <div class="scroller__item__small__img">
+                            <video src="../assets/video/ameneties/Shot-12.mp4" class="modal-content__video" loop></video>
+                        </div> -->
+
+
                         <!-- TODO: Check with Paley -->
-                        <iframe class="scroller__item__small__img" src="https://www.youtube.com/embed/0zCLRbeJJ9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <video class="video-js scroller__item__small__img" data-setup='{}' controls autoplay loop>
+                            <source src="../assets/video/ameneties/Shot-12.mp4" type="video/mp4" class="scroller__item__small__img">
+                        </video>
+                        
+                        <!-- <iframe class="scroller__item__small__img" src="https://www.youtube.com/embed/0zCLRbeJJ9M;controls=0&amp&amp;showinfo=0&amp;modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" modestbranding="0" allowfullscreen></iframe> -->
+
+                        <!-- <div class="scroller__item__small__img">
+                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/854203851?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Marama's Clubhouse Kitchen"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                        </div> -->
+
 
                         <h2 class="scroller__item__text" onclick="openModal(0)">CLUBHOUSE KITCHEN</h2>
                     </div>
@@ -315,5 +330,8 @@
     <!-- scripts -->
     <script type="text/javascript" src="../assets/scripts/script.js"></script>
     <script type="text/javascript" src="../assets/scripts/moonScroller.js"></script>
+
+    <script type="text/javascript" src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+
 </body>
 </html>
