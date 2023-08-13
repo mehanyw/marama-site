@@ -21,7 +21,7 @@ $mail->Password = $PASSWORD;
 // Email headers
 $mail->setFrom($USER_NAME, 'Live Marama');
 $mail->addAddress('mehanyw@gmail.com', 'Waseem Mehany');
-$mail->addAddress('danielpaley@gmail.com', 'Daniel Paley');
+// $mail->addAddress('marama@sierrasothebysrealty.com', 'Jenny Johnson');
 $mail->Subject = 'Contact Form';
 
 // Email body
@@ -44,7 +44,7 @@ $mail->Body = <<<EOT
 EOT;
 
 if (!$mail->send()) {
-	echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+	echo '<script>alert("Sorry, try again!")</script>';
 } else {
 	header("Location:https://www.livemarama.com/pages/contactSuccess.html");
 }
